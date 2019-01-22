@@ -1,0 +1,14 @@
+.button-pre{
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  background:#272822;
+  border-radius:7px;
+}
+.button-pre:hover{
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  background:#17a2b8;
+  border-radius:7px;
+}
