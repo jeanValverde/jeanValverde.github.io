@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets-public/img/apple-icon.png">
@@ -14,163 +13,9 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="assets-public/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+  <link href="assets-public/css/material-kit.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets-public/demo/demo.css" rel="stylesheet" />
-
-  <script>
-
-  function text2Binary(string) {
-      return string.split('').map(function (char) {
-          return char.charCodeAt(0).toString(2);
-      }).join(' ');
-  };
-
-  function binaryAgent(str) {
-
-  var strArray = str.split(" ");
-  var text ="";
-  for(var i = 0 ; i<strArray.length ; i++){
-    var char = parseInt(strArray[i],2).toString(10);
-    char = String.fromCharCode(char);
-    text += char;
-  }
-  return text;
-
-};
-
-  function getP(){
-    var pas1 = ["110110", "110010", "110111", "111001", "111001",  "110001" ];
-
-    var pas2 = [ "100011","1001010","1100101","1100001","1101110"];
-
-    var t = pas1.reverse();
-
-    var part1 = "";
-
-    for(var i = 0 ; i< 5 ; i++){
-      part1 = part1 + ' ' + pas2[i];
-    }
-
-    var part2 = "";
-
-    for(var i = 0 ; i< 6 ; i++){
-      part2 = part2 + ' ' + pas1[i];
-    }
-
-    var te  = part1 + part2;
-
-    return te;
-
-  };
-
-
-   function getU(){
-     var pas1 = ["1100101", "1100100", "1110010", "1100101", "1110110", "1101100", "1100001", "1110110", "101110", "1101110", "1100001", "1100101", "1101010"];
-     var t = pas1.reverse();
-     var re = "";
-     for(var i = 0 ; i< 13 ; i++){
-       re = re + ' ' + pas1[i];
-     }
-
-     return re;
-
-   }
-
-   if(typeof String.prototype.trim !== 'function') {
-    String.prototype.trim = function() {
-        return this.replace(/^\s+|\s+$/g, '');
-    }
-  }
-
-  if (!String.prototype.trim) {
-    (function() {
-        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-        String.prototype.trim = function() {
-        return this.replace(rtrim, '');
-        };
-    })();
-}
-
-String.prototype.trim = function() { return this.replace(/^\s+|\s+$/g, ""); };
-
-
-  function app(){
-
-    var form = document.forms[0];
-
-    var pSinEspacios = getP().trim();
-
-    var pCompleta = binaryAgent(pSinEspacios);
-
-    var cadenaP = form.elements[1].value;
-
-
-      s_obj = new String(pCompleta.toString()); // crea un objeto Cadena
-      console.log(s_obj);
-
-      cass = new String(cadenaP.toString()); // crea un objeto Cadena
-      console.log(cass);
-
-
-      var uSinEspacios = getU().trim();
-
-      var uCompleta = binaryAgent(uSinEspacios);
-
-      var cadenaU = form.elements[0].value;
-
-
-        s_usr = new String(uCompleta.toString()); // crea un objeto Cadena
-        console.log(s_usr);
-
-        use = new String(cadenaU.toString()); // crea un objeto Cadena
-        console.log(use);
-
-
-
-
-
-     if(s_obj[0] == cass[0]){
-       if(s_obj[1] == cass[1]){
-         if(s_obj[2] == cass[2]){
-           if(s_obj[3] == cass[3]){
-             if(s_obj[4] == cass[4]){
-               if(s_obj[5] == cass[5]){
-                 if(s_obj[6] == cass[6]){
-                   if(s_obj[7] == cass[7]){
-                     if(s_obj[8] == cass[8]){
-                       if(s_obj[9] == cass[9]){
-                         if(s_obj[10] == cass[10]){
-                           if(s_usr[0] == use[0] & s_usr[1] == use[1] & s_usr[2] == use[2] & s_usr[3] == use[3] & s_usr[4] == use[4] & s_usr[5] == use[5] & s_usr[6] == use[6]
-                             & s_usr[7] == use[7] & s_usr[8] == use[8] & s_usr[9] == use[9] & s_usr[10] == use[10] & s_usr[11] == use[11] & s_usr[12] == use[12] ){
-                                 window.onload = function() {
-                                    var getInput = prompt("Escribe algo: sdsd ");
-                                    localStorage.setItem("session",getInput);
-                                };
-
-                                window.location.assign("index-old.html"); 
-                           }else{
-                             alert("error");
-                           }
-                         }
-                       }
-                     }
-                   }
-                 }
-               }
-             }
-           }
-         }
-       }
-     }
-
-
-
-  }
-
-
-  </script>
-
 </head>
 
 <body class="login-page sidebar-collapse">
@@ -264,6 +109,10 @@ String.prototype.trim = function() { return this.replace(/^\s+|\s+$/g, ""); };
   <script src="assets-public/js/core/popper.min.js" type="text/javascript"></script>
   <script src="assets-public/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="assets-public/js/plugins/moment.min.js"></script>
+
+  <script src="assets-public/js/cassPass.js" type="text/javascript"></script>
+  <script src="assets-public/js/app.js" type="text/javascript"></script>
+
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script src="assets-public/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -272,6 +121,7 @@ String.prototype.trim = function() { return this.replace(/^\s+|\s+$/g, ""); };
 
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="assets-public/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+
 </body>
 
 </html>
