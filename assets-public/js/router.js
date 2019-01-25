@@ -1,4 +1,7 @@
 
+var u =  localStorage.getItem("session");
+router();
+
   function router(){
 
     if(u != null){
