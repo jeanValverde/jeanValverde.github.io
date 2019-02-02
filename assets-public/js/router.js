@@ -8,10 +8,10 @@ router();
       if(validarS(u)){
 
       }else{
-          window.location.assign("index.html");
+          window.location.assign("index");
       }
 
     }else{
-      window.location.assign("index.html");
+      window.location.assign("index");
     }
   }
