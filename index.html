@@ -17,15 +17,6 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets-public/demo/demo.css" rel="stylesheet" />
 
-
-
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-
-  <script src="https://mappinggis.com/visores_webmapping/leaflet-routing-machine-3.2.5/dist/leaflet-routing-machine.js"></script>
-<link rel="stylesheet" href="https://mappinggis.com/visores_webmapping/leaflet-routing-machine-3.2.5/dist/leaflet-routing-machine.css" />
-
-
 </head>
 
 <body class="login-page sidebar-collapse">
@@ -90,13 +81,9 @@
               </div>
             </form>
           </div>
+          
         </div>
       </div>
-
-<div class="row">
-  <div id = 'map' style="color:#000;">
-		</div>
-</div>
 
     </div>
     <footer class="footer">
@@ -136,45 +123,6 @@
   <script src="assets-public/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
 
 
-
-   <script>
-
-  var map = L.map('map').
-  setView([41.66, -4.72],
-  14);
-  map.scrollWheelZoom.disable();
-
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-
-  var control = L.Routing.control({
-  	waypoints: [
-  		L.latLng(-30.381957, -70.844032),
-  		L.latLng(-30.380020, -70.830203)
-  	],
-      routeWhileDragging: true,
-      reverseWaypoints: true,
-      showAlternatives: true,
-      altLineOptions: {
-          styles: [
-              {color: 'black', opacity: 0.15, weight: 9},
-              {color: 'white', opacity: 0.8, weight: 6},
-              {color: 'blue', opacity: 0.5, weight: 2}
-          ]
-      }
-  }).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
-
-  L.Routing.errorControl(control).addTo(map);
-
-  L.Routing.Formatter = L.Class.extend({
-  	options: {
-  		language: 'sp'
-  	}
-  });
-
-   </script>
 
 </body>
 
