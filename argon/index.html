@@ -236,7 +236,6 @@
     <section class="section section-components pb-0" id="section-components">
       <div class="container">
         <div class="row justify-content-center">
-
           <div class="nav-wrapper">
                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                  <li class="nav-item">
@@ -254,7 +253,7 @@
 
                     <div class="row">
                       <div class="col-md-6">
-                        <h3 class="h4 text-success text-center font-weight-bold mb-4">¿Dónde te encuentras?</h3>
+                        <h3 class="h4 text-center font-weight-bold mb-4">¿Dónde te encuentras?</h3>
                         <div class="alert alert-info alert-dismissible fade show" role="alert">
                           <span class="alert-inner--icon"><i class="ni ni-bell-55"></i></span>
                           <span class="alert-inner--text"><strong>Info!</strong> This is an info alert—check it out!</span>
@@ -268,10 +267,20 @@
                                <option>...</option>
                              </select>
                            </div>
-                           <button class="btn btn-icon btn-3 btn-primary" type="submit">
-                             <span class="btn-inner--icon"><i class="ni ni-bag-17"></i></span>
-                             <span class="btn-inner--text">Buscar transporte</span>
-                           </button>
+                           <div class="row">
+                             <div class="col-md-7">
+                               <button class="btn btn-icon btn-3 btn-primary" type="submit">
+                                 <span class="btn-inner--icon"><i class="ni ni-bag-17"></i></span>
+                                 <span class="btn-inner--text">Buscar transporte</span>
+                               </button>
+                             </div>
+                             <div class="col-md-3">
+                               <button class="btn btn-icon btn-3 btn-primary" type="submit">
+                                 <span class="btn-inner--icon"><i class="ni ni-bag-17"></i></span>
+                                 <span class="btn-inner--text">Ver todo</span>
+                               </button>
+                             </div>
+                           </div>
                         </form>
                       </div>
                       <div class="col-md-6">
@@ -390,7 +399,101 @@
       <div class="container">
         <h3 class="h4 text-success font-weight-bold mb-4"></h4>
           <div class="row justify-content-center">
-
+            <div class="mb-3">
+                <small class="text-uppercase font-weight-bold">Recorrido de la semana</small>
+              </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="nav-wrapper">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-text-1-tab" data-toggle="tab" href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">Lunes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-2-tab" data-toggle="tab" href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">Martes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Miercoles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Jueves</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Vierner</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Sabado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Domingo</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabs-text-1" role="tabpanel" aria-labelledby="tabs-text-1-tab">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="card">
+                                <div class="row">
+                                  <div class="col-md-6 text-center">
+                                    <div style="height: 50%;"></div>
+                                    <span class="badge badge-pill badge-danger">Dic 2017</span>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sin cargo definido - Sin empresa </h5>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
+                      <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
+                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+            </div>
           </div>
       </div>
     </section>
