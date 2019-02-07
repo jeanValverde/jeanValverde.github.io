@@ -269,13 +269,13 @@
                            </div>
                            <div class="row">
                              <div class="col-md-7">
-                               <button class="btn btn-icon btn-3 btn-primary" type="submit">
+                               <button class="btn btn-icon btn-3 btn-primary" type="button">
                                  <span class="btn-inner--icon"><i class="ni ni-bag-17"></i></span>
                                  <span class="btn-inner--text">Buscar transporte</span>
                                </button>
                              </div>
                              <div class="col-md-3">
-                               <button class="btn btn-icon btn-3 btn-primary" type="submit">
+                               <button class="btn btn-icon btn-3 btn-primary" type="button">
                                  <span class="btn-inner--icon"><i class="ni ni-bag-17"></i></span>
                                  <span class="btn-inner--text">Ver todo</span>
                                </button>
@@ -397,12 +397,15 @@
     </section>
     <section class="section section-components">
       <div class="container">
-        <h3 class="h4 text-success font-weight-bold mb-4"></h4>
+        <div class="mb-3 text-center">
+            <small class="text-uppercase font-weight-bold">Recorrido de la semana</small>
+        </div>
           <div class="row justify-content-center">
-            <div class="mb-3">
-                <small class="text-uppercase font-weight-bold">Recorrido de la semana</small>
-              </div>
             <div class="row">
+              <div class="row">
+                <div class="col-md-12">
+                </div>
+              </div>
               <div class="col-md-12">
                 <div class="nav-wrapper">
                 <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
@@ -416,16 +419,16 @@
                     <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Miercoles</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Jueves</a>
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-4-tab" data-toggle="tab" href="#tabs-text-4" role="tab" aria-controls="tabs-text-3" aria-selected="false">Jueves</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Vierner</a>
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-5-tab" data-toggle="tab" href="#tabs-text-5" role="tab" aria-controls="tabs-text-3" aria-selected="false">Vierner</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Sabado</a>
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-6-tab" data-toggle="tab" href="#tabs-text-6" role="tab" aria-controls="tabs-text-3" aria-selected="false">Sabado</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-3-tab" data-toggle="tab" href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">Domingo</a>
+                    <a class="nav-link mb-sm-3 mb-md-0" id="tabs-text-7-tab" data-toggle="tab" href="#tabs-text-7" role="tab" aria-controls="tabs-text-3" aria-selected="false">Domingo</a>
                   </li>
                 </ul>
               </div>
@@ -440,9 +443,22 @@
                               Rio Hurtado - Ovalle
                             </div>
                             <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -452,18 +468,21 @@
                               Ovalle - Rio Hurtado
                             </div>
                             <div class="card-body">
-                              <div class="card">
-                                <div class="row">
-                                  <div class="col-md-6 text-center">
-                                    <div style="height: 50%;"></div>
-                                    <span class="badge badge-pill badge-danger">Dic 2017</span>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Sin cargo definido - Sin empresa </h5>
-                                    </div>
-                                  </div>
-                                </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
                               </div>
                             </div>
                           </div>
@@ -471,22 +490,281 @@
                       </div>
                     </div>
                     <div class="tab-pane fade" id="tabs-text-2" role="tabpanel" aria-labelledby="tabs-text-2-tab">
-                      <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
-                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
-                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    <div class="tab-pane fade" id="tabs-text-4" role="tabpanel" aria-labelledby="tabs-text-4-tab">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
-                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    <div class="tab-pane fade" id="tabs-text-5" role="tabpanel" aria-labelledby="tabs-text-5-tab">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
-                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    <div class="tab-pane fade" id="tabs-text-6" role="tabpanel" aria-labelledby="tabs-text-6-tab">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="tab-pane fade" id="tabs-text-3" role="tabpanel" aria-labelledby="tabs-text-3-tab">
-                      <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                    <div class="tab-pane fade" id="tabs-text-7" role="tabpanel" aria-labelledby="tabs-text-7-tab">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Rio Hurtado - Ovalle
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header text-center">
+                              Ovalle - Rio Hurtado
+                            </div>
+                            <div class="card-body">
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                                <span class="alert-inner--text"><strong>09:45</strong> Destino {localidad}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
