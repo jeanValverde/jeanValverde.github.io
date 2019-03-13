@@ -37,7 +37,7 @@
       <div class="sidebar-wrapper">
         <div class="logo">
           <a href="javascript:void(0)" class="simple-text logo-normal text-center">
-            Nombre proyecto
+            Portal Turístico
           </a>
         </div>
         <ul class="nav">
@@ -109,7 +109,7 @@
                   <a class="nav-link" href="#"><i class="tim-icons icon-laptop"></i> Demo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img src="https://img.icons8.com/ios-glyphs/26/000000/github.png"> GitHub</a>
+                  <a class="nav-link" href="https://github.com/jeanValverde/portalTuristico.git"><img src="https://img.icons8.com/ios-glyphs/26/000000/github.png"> GitHub</a>
                 </li>
               </ul>
               <li class="separator d-lg-none"></li>
@@ -139,7 +139,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h1 class="card-title">Estructura de archivos</h1>
-                    <h4 class="card-subtitle mb-2 text-muted">Card subtitle</h4>
+                    <h4 class="card-subtitle mb-2 text-muted">Separados por capas</h4>
                     <p class="card-text">Una vez que haya descargado el archivo y lo haya abierto, encontrará la siguiente estructura:</p>
                   </div>
                 </div>
@@ -160,48 +160,135 @@
                        </div>
                      </div>
                         <pre id="demo" ><code class="language-java" >
-                          └── black-dashboard
-    ├── CHANGELOG.md
-    ├── README.md
-    ├── assets
+                          └── PortalTuristico
+
+    ├── assets-admin
     │   ├── css
-    │   │   ├── black-dashboard.css
-    │   │   ├── black-dashboard.css.map
-    │   │   ├── black-dashboard.min.css
-    │   │   ├── bootstrap.min.css
-    │   │   └── nucleo-icons.css
+    │   │   ├── argon.css
+    │   │   ├── argon.min.css
+    │   │   ├── bootstrap-material-datetimepicker.css
     │   ├── demo
     │   │   ├── demo.css
     │   │   └── demo.js
     │   ├── fonts/
     │   ├── img/
     │   ├── js
-    │   │   ├── black-dashboard.js
-    │   │   ├── black-dashboard.js.map
-    │   │   ├── black-dashboard.min.js
+    │   │   ├── argon.js
+    │   │   ├── argon.min.js
+    │   │   ├── bootstrap-material-datetimepicker.js
     │   │   ├── core/
     │   │   └── plugins
-    │   │       ├── bootstrap-notify.js
-    │   │       ├── chartjs.min.js
-    │   │       └── perfect-scrollbar.jquery.min.js
-    │   └── scss/
-    │       ├── black-dashboard/
-    │       └── black-dashboard.scss
-    ├── docs
-    │   └── documentation.html
-    ├── examples
-    │   ├── dashboard.html
-    │   ├── icons.html
-    │   ├── map.html
-    │   ├── notifications.html
-    │   ├── rtl.html
-    │   ├── tables.html
-    │   ├── typography.html
-    │   ├── upgrade.html
-    │   └── user.html
-    ├── gulpfile.js
-    ├── package.json
-    └── LICENSE.md
+    │   │       ├── bootstrap/
+    │   │       ├── core/
+    │   │       ├── custom/
+    │   │       └── argon.scss
+    │   ├── scss/
+    │   │   ├── black-dashboard/
+    │   │   └── black-dashboard.scss
+    │   └── vendor/
+    ├── controllers
+    │   ├── EmergenciaService.php
+    │   ├── EmpresaService.php
+    │   ├── NoticiaService.php
+    │   ├── RecorridoService.php
+    │   ├── TurismoService.php
+    │   └── UsuarioService.php
+    ├── funciones
+    │   │   ├── imgNoticias/
+    │   │   └── imgTurismo/
+    │   ├── addEmergencia.php
+    │   ├── addEmpresa.php
+    │   ├── addNoticia.php
+    │   ├── addRecorrido.php
+    │   ├── addUsuario.php
+    │   ├── administracion.php
+    │   ├── cajaVecina.php
+    │   ├── changePassword.php
+    │   ├── deleteEmpresa.php
+    │   ├── deleteNoticia.php
+    │   ├── deleteTurismo.php
+    │   ├── deleteUsuario.php
+    │   ├── editEmergencia.php
+    │   ├── editEmpresa.php
+    │   ├── editNoticia.php
+    │   ├── editRecorrido.php
+    │   ├── editTurismo.php
+    │   ├── editUsuario.php
+    │   ├── emergencia.php
+    │   ├── graficos-admin.php
+    │   ├── init.php
+    │   ├── noticias.php
+    │   ├── perfil.php
+    │   ├── sendRestar.php
+    │   ├── transporte.php
+    │   ├── turismo.php
+    │   └── widget-admin.php
+    ├── models
+    │   ├── Conection.php
+    │   ├── Emergencia.php
+    │   ├── Empresa.php
+    │   ├── Noticia.php
+    │   ├── Recorrido.php
+    │   ├── Turismo.php
+    │   └── Usuario.php
+    ├── segmentos
+    │   ├── footer.php
+    │   ├── footerJs.php
+    │   ├── footerPublico.php
+    │   ├── headPublico.php
+    │   ├── headerPublico.php
+    │   ├── session.php
+    │   ├── sidenav.php
+    │   └── topVar.php
+    ├── views
+    │   ├── admin/
+    │   │     ├── CajaVecina.php
+    │   │     ├── acampar.php
+    │   │     ├── actividad.php
+    │   │     ├── administracion.php
+    │   │     ├── alojamiento.php
+    │   │     ├── atractivo.php
+    │   │     ├── emergencia.php
+    │   │     ├── facebook.php
+    │   │     ├── noticias.php
+    │   │     ├── perfil.php
+    │   │     ├── restaurante.php
+    │   │     └── transporte.php
+    │   ├── assets/
+    │   │      ├── CountDownTimer/
+    |   │      │    ├── downCount.jquery.json
+    |   │      |    └── jquery.downCount.js
+    │   │      ├── js/
+    |   │      │    ├── argon.css
+    |   │      |    └── argon.min.js
+    │   │      ├── img/
+    │   │      ├── css/
+    |   │      │    ├── bootstrap/
+    |   │      │    ├── custom/
+    |   │      |    └── argon.scss
+    │   │      ├── scss/
+    │   │      └── vendor/
+    │   ├── eclipse.php
+    │   ├── forgot.php
+    │   ├── index.php
+    │   ├── login.php
+    │   ├── restart.php
+    │   ├── servicios.php
+    │   ├── transporte.php
+    │   └── turismo.php
+    │   ├── footer.php
+    │   ├── footerJs.php
+    │   ├── footerPublico.php
+    │   ├── headPublico.php
+    │   ├── headerPublico.php
+    │   ├── session.php
+    │   ├── sidenav.php
+    │   └── topVar.php
+    ├── .htacces
+    ├── README.md
+    ├── index.php
+    ├── mail.jpg
+    ├── restablecer.jpg
                         </code>
                        </pre>
                     </div>
