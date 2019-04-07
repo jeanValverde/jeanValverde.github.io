@@ -18,7 +18,7 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 
-
+  <link rel="stylesheet" href="../../venobox/venobox.css" />
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -663,7 +663,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="../assets/img/corte1.jpg" alt="Card image cap">
+                  <a class="venobox" href="../assets/img/corte1.jpg"><img class="card-img-top" src="../assets/img/corte1.jpg" alt="Card image cap"></a>
                 </div>
               </div>
             </div>
@@ -702,7 +702,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="../assets/img/corte2.jpg" alt="Card image cap">
+                  <a class="venobox" href="../assets/img/corte2.jpg"><img class="card-img-top" src="../assets/img/corte2.jpg" alt="Card image cap"></a>
                 </div>
               </div>
             </div>
@@ -717,7 +717,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="../assets/img/corte3.jpg" alt="Card image cap">
+                  <a class="venobox" href="../assets/img/corte3.jpg"><img class="card-img-top" src="../assets/img/corte3.jpg" alt="Card image cap"></a>
                 </div>
               </div>
             </div>
@@ -756,7 +756,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <img class="card-img-top" src="../assets/img/corte4.jpg" alt="Card image cap">
+                  <a class="venobox" href="../assets/img/corte4.jpg"><img class="card-img-top" src="../assets/img/corte4.jpg" alt="Card image cap"></a>
                 </div>
               </div>
             </div>
@@ -894,6 +894,13 @@
     }
   </script>
 
+  <script src="../../venobox/venobox.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.venobox').venobox();
+    });
+  </script>
 
 
 </body>
