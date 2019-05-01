@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-  <title>Ayudantías</title>
+  <title>Admindek | Admin Template</title>
 
 
   <!--[if lt IE 10]>
@@ -40,25 +40,16 @@
 
   <link rel="stylesheet" type="text/css" href="../files/assets/pages/prism/prism.css">
 
-  <link rel="stylesheet" type="text/css" href="../files/assets/css/font-awesome-n.min.css">
-
   <link rel="stylesheet" type="text/css" href="../files/assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../files/assets/css/pcoded-horizontal.min.html">
 
+  <link rel="stylesheet" href="../files/bower_components/select2/css/select2.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="../files/bower_components/bootstrap/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="../files/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
-
-  <link rel="stylesheet" type="text/css" href="../files/assets/icon/feather/css/feather.css">
-
-  <link rel="stylesheet" type="text/css" href="../files/assets/css/font-awesome-n.min.css">
-
-  <link rel="stylesheet" href="../files/bower_components/chartist/css/chartist.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="../files/bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+  <link rel="stylesheet" type="text/css" href="../files/bower_components/multiselect/css/multi-select.css" />
 
   <link rel="stylesheet" type="text/css" href="../files/assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="../files/assets/css/widget.css">
-
+  <link rel="stylesheet" type="text/css" href="../files/assets/css/pages.css">
 </head>
 
 <body>
@@ -114,8 +105,8 @@
                   </div>
                   <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                     <li>
-                      <h6>Norificaciones</h6>
-                      <label class="label label-danger">Nuevos</label>
+                      <h6>Notifications</h6>
+                      <label class="label label-danger">New</label>
                     </li>
                     <li>
                       <div class="media">
@@ -168,17 +159,17 @@
                   <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                     <li>
                       <a href="#!">
-                        <i class="feather icon-settings"></i> Configuración
+                        <i class="feather icon-settings"></i> Settings
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="feather icon-user"></i> Perfil
+                        <i class="feather icon-user"></i> Profile
                       </a>
                     </li>
                     <li>
                       <a href="email-inbox.html">
-                        <i class="feather icon-mail"></i> Chat
+                        <i class="feather icon-mail"></i> My Messages
                       </a>
                     </li>
                     <li>
@@ -188,7 +179,7 @@
                     </li>
                     <li>
                       <a href="auth-sign-in-social.html">
-                        <i class="feather icon-log-out"></i> Salir
+                        <i class="feather icon-log-out"></i> Logout
                       </a>
                     </li>
                   </ul>
@@ -250,7 +241,7 @@
                     <div class="live-status bg-default"></div>
                   </a>
                   <div class="media-body">
-                    <div class="f-13 chat-header">Alia<small class="d-block text-muted">10 min atras</small></div>
+                    <div class="f-13 chat-header">Alia<small class="d-block text-muted">10 min ago</small></div>
                   </div>
                 </div>
                 <div class="media userlist-box waves-effect waves-light" data-id="5" data-status="offline" data-username="Suzen">
@@ -259,7 +250,7 @@
                     <div class="live-status bg-default"></div>
                   </a>
                   <div class="media-body">
-                    <div class="f-13 chat-header">Suzen<small class="d-block text-muted">15 min atras</small></div>
+                    <div class="f-13 chat-header">Suzen<small class="d-block text-muted">15 min ago</small></div>
                   </div>
                 </div>
               </div>
@@ -325,13 +316,13 @@
           <nav class="pcoded-navbar">
             <div class="pcoded-inner-navbar">
               <ul class="pcoded-item">
-                <li class="active">
+                <li class="">
                   <a href="index.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
                     <span class="pcoded-mtext">Reciente</span>
                   </a>
                 </li>
-                <li class="">
+                <li class="active">
                   <a href="cursos.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="feather icon-clipboard"></i></span>
                     <span class="pcoded-mtext">Cursos Disponibles</span>
@@ -448,450 +439,389 @@
             </div>
           </nav>
 
-
-          <!--CONTENIDO-->
           <div class="pcoded-content">
+
             <div class="page-header card">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row align-items-end">
-                    <div class="col-md-12">
-                      <div class="card proj-progress-card">
-                        <div class="card-block">
-                          <h5 class="text-center">Avances de los Cursos inscritos</h5><br /><br />
-                          <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                              <h6>Curso de Inglés Básico</h6>
-                              <h5 class="m-b-30 f-w-700"><span class="text-c-green m-l-10"></span></h5>
-                              <div class="progress">
-                                <div class="progress-bar bg-c-red" style="width:25%"></div>
-                              </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                              <h6>Diseño Gráfico</h6>
-                              <h5 class="m-b-30 f-w-700"><span class="text-c-red m-l-10"></span></h5>
-                              <div class="progress">
-                                <div class="progress-bar bg-c-blue" style="width:65%"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="card list-view-media">
-                          <div class="card-block">
-                            <div class="media">
-                              <a class="media-left" href="#">
-                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                              </a>
-                              <div class="media-body">
-                                <div class="col-xs-12">
-                                  <h6 class="d-inline-block">
-                                    Curso de Inglés Básico: Conversación
-                                  </h6>
-                                  <label class="label label-info">Alonso Vega</label>
-                                  <label class="label label-info">Inglés Senior</label>
-                                </div>
-                                <div class="f-13 text-muted m-b-15">
-
-                                </div>
-                                <p>Aprende inglés desde cero. Fortalece tus habilidades comunicativas para mantener conversaciones efectivas en inglés.</p>
-                                <a class="btn btn-danger" href="pagina-curso-actividad.html" name="button">Foro alumnos</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card list-view-media">
-                          <div class="card-block">
-                            <div class="media">
-                              <a class="media-left" href="#">
-                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                              </a>
-                              <div class="media-body">
-                                <div class="col-xs-12">
-                                  <h6 class="d-inline-block">
-                                    Diseño Gráfico
-                                  </h6><br />
-                                  <label class="label label-info">Maria Arredondo</label>
-                                  <label class="label label-info">Ingenieria en Informática</label>
-                                </div>
-                                <div class="f-13 text-muted m-b-15">
-
-                                </div>
-                                <p>Aprende las bases del diseño gráfico y domina herramientas como Photoshop e Illustrator. Crea diseños publicitarios, ilustraciones y branding.</p>
-                                <a class="btn btn-danger" href="pagina-curso-actividad.html" name="button">Foro alumnos</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="col-xl-12 col-md-12">
-                      <div class="card latest-update-card">
-                        <div class="card-header">
-                          <h5>Actividad del los Cursos</h5>
-                          <div class="card-header-right">
-                            <ul class="list-unstyled card-option">
-                              <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
-                              <li><i class="feather icon-maximize full-card"></i></li>
-                              <li><i class="feather icon-minus minimize-card"></i></li>
-                              <li><i class="feather icon-refresh-cw reload-card"></i></li>
-                              <li><i class="feather icon-trash close-card"></i></li>
-                              <li><i class="feather icon-chevron-left open-card-option"></i></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="card-block">
-                          <div class="latest-update-box">
-                            <div class="row p-t-20 p-b-30">
-                              <div class="col-auto text-right update-meta">
-                                <i class="feather icon-sunrise bg-c-blue update-icon"></i>
-                              </div>
-                              <div class="col">
-                                <h6>Jean Carlos González Valverde <div class="label-main">
-                                    <label class="label label-success">Inglés</label>
-                                  </div>
-                                </h6>
-                                <p class="text-muted m-b-15">The trip was an amazing and a life changing experience!!</p>
-                                <img src="../files/assets/images/mega-menu/01.jpg" alt="" class="img-fluid img-100 m-r-15 m-b-10">
-                                <img src="../files/assets/images/mega-menu/03.jpg" alt="" class="img-fluid img-100 m-r-15 m-b-10">
-                              </div>
-                            </div>
-                            <div class="row p-b-30">
-                              <div class="col-auto text-right update-meta">
-                                <i class="feather icon-file-text bg-c-blue update-icon"></i>
-                              </div>
-                              <div class="col">
-                                <h6>Alejandro Anabalon <div class="label-main">
-                                    <label class="label label-success">Diseño Gráfico</label>
-                                  </div>
-                                </h6>
-                                <p class="text-muted m-b-0">¡Cursos gratuitos para todos nuestros clientes en la sala de conferencias A1 - mañana a las 9:00 am!</p>
-                              </div>
-                            </div>
-                            <div class="row p-b-30">
-                              <div class="col-auto text-right update-meta">
-                                <i class="feather icon-map-pin bg-c-blue update-icon"></i>
-                              </div>
-                              <div class="col">
-                                <h6>Michal Orellana <div class="label-main">
-                                    <label class="label label-success">Diseño Gráfico</label>
-                                  </div>
-                                </h6>
-                                <p class="text-muted m-b-15">¡Bebidas gratis en el <span> <a href="#!" class="text-c-blue">Café-Bar </a> </span> todo el día!</p>
-
-                              </div>
-                            </div>
-                          </div>
-                          <div class="text-right">
-                            <a href="#!" class=" b-b-primary text-primary">Ver toda la actividad</a>
-                          </div>
-                        </div>
-                      </div>
+              <div class="row align-items-end">
+                <div class="col-lg-8">
+                  <div class="page-header-title">
+                    <i class="feather icon-sidebar bg-c-blue"></i>
+                    <div class="d-inline">
+                      <h5>Cursos y ayudantias</h5>
+                      <span>Aca encontraras todos los cursos disponibles para aprender</span>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-6">
-                  <div class="col-md-12">
-                    <div class="card proj-progress-card">
-                      <div class="card-block">
-                        <h5 class="text-center">Avances de los Cursos Impartidos </h5><br /><br />
-                        <div class="row">
-                          <div class="col-xl-3 col-md-6">
-                            <h6>Finanzas Personales</h6>
-                            <h5 class="m-b-30 f-w-700"><span class="text-c-green m-l-10"></span></h5>
-                            <div class="progress">
-                              <div class="progress-bar bg-c-red" style="width:25%"></div>
-                            </div>
-                          </div>
-                          <div class="col-xl-3 col-md-6">
-                            <h6>APRENDIZAJE ACTIVO</h6>
-                            <h5 class="m-b-30 f-w-700"><span class="text-c-green m-l-10"></span></h5>
-                            <div class="progress">
-                              <div class="progress-bar bg-c-green" style="width:85%"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-lg-4">
+                  <div class="page-header-breadcrumb">
+                    <ul class=" breadcrumb breadcrumb-title">
+                      <li class="breadcrumb-item">
+                        <a href="index.html"><i class="feather icon-home"></i></a>
+                      </li>
+                      <li class="breadcrumb-item"><a href="#!">Page Layouts</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="#!">Sample page</a>
+                      </li>
+                    </ul>
                   </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="card list-view-media">
-                        <div class="card-block">
-                          <div class="media">
-                            <a class="media-left" href="#">
-                              <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                            </a>
-                            <div class="media-body">
-                              <div class="col-xs-12">
-                                <h6 class="d-inline-block">
-                                  Finanzas Personales
-                                </h6><br />
-                                <label class="label label-info">Pedro González</label>
-                                <label class="label label-info">Administración</label>
-                              </div>
-                              <div class="f-13 text-muted m-b-15">
-
-                              </div>
-                              <p>Ahorrar nos viene bien a todos y es que si algo tienen en común el tiempo y el dinero es que ambos vuelan. <br /> <br></p>
-                              <a class="btn btn-primary" href="miCurso.html" name="button">Ver Curso</a> &nbsp;
-                              <a class="btn btn-danger" href="pagina-curso-actividad.html" name="button">Foro alumnos</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card list-view-media">
-                        <div class="card-block">
-                          <div class="media">
-                            <a class="media-left" href="#">
-                              <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                            </a>
-                            <div class="media-body">
-                              <div class="col-xs-12">
-                                <h6 class="d-inline-block">
-                                  APRENDIZAJE ACTIVO
-                                </h6>
-                                <label class="label label-info">Andrea Rodríguez Silva</label>
-                                <label class="label label-info">CS. SOCIALES</label>
-                              </div>
-                              <div class="f-13 text-muted m-b-15">
-
-                              </div>
-                              <p>El curso está diseñado para formar habilidades básicas para trabajar en equipo, desarrollándolas...</p>
-                              <a class="btn btn-primary" href="miCurso.html" name="button">Ver Curso</a> &nbsp;
-                              <a class="btn btn-danger" href="pagina-curso-actividad.html" name="button">Foro alumnos</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                  </div>
-
-                  <div class="col-xl-12 col-md-12">
-
-
-
-                    <div class="card latest-update-card">
-                      <div class="card-header">
-                        <h5>Consultas de los Alumnos</h5>
-                        <div class="card-header-right">
-                          <ul class="list-unstyled card-option">
-                            <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
-                            <li><i class="feather icon-maximize full-card"></i></li>
-                            <li><i class="feather icon-minus minimize-card"></i></li>
-                            <li><i class="feather icon-refresh-cw reload-card"></i></li>
-                            <li><i class="feather icon-trash close-card"></i></li>
-                            <li><i class="feather icon-chevron-left open-card-option"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="card-block">
-                        <div class="latest-update-box">
-                          <div class="row p-t-20 p-b-30">
-                            <div class="col-auto text-right update-meta p-r-0">
-                              <img src="../files/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15 update-icon">
-                            </div>
-                            <div class="col p-l-5">
-                              <a href="#!">
-                                <h6>En que vamos a trabajar, php puro, con framework u otro lenguaje de programacion? </h6>
-                              </a>
-                              <p class="text-muted m-b-0">Jonny michel</p>
-                            </div>
-                          </div>
-                          <div class="row p-b-30">
-                            <div class="col-auto text-right update-meta p-r-0">
-                              <i class="feather icon-briefcase bg-c-red update-icon"></i>
-                            </div>
-                            <div class="col p-l-5">
-                              <a href="#!">
-                                <h6>Que hicieron el martes en excel?</h6>
-                              </a>
-                              <p class="text-muted m-b-0">Hemilton</p>
-                            </div>
-                          </div>
-                          <div class="row p-b-30">
-                            <div class="col-auto text-right update-meta p-r-0">
-                              <i class="feather icon-check f-w-600 bg-c-green update-icon"></i>
-                            </div>
-                            <div class="col p-l-5">
-                              <a href="#!">
-                                <h6>En los requerimientos pusiste las id de los requerimientos y casos de uso</h6>
-                              </a>
-                              <p class="text-muted m-b-0">Hemilton</p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-auto text-right update-meta p-r-0">
-                              <img src="../files/assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15 update-icon">
-                            </div>
-                            <div class="col p-l-5">
-                              <a href="#!">
-                                <h6>El punto 4 en el informe atam, se copia y pega, o se hace segun nuestro criterio?</h6>
-                              </a>
-                              <p class="text-muted m-b-0">Jonny michel</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!--
-
-<div class="col-xl-12 col-md-12">
-  <div class="card chat-card">
-    <div class="card-header">
-      <h5>Chat history</h5>
-      <div class="card-header-right">
-        <ul class="list-unstyled card-option">
-          <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
-          <li><i class="feather icon-maximize full-card"></i></li>
-          <li><i class="feather icon-minus minimize-card"></i></li>
-          <li><i class="feather icon-refresh-cw reload-card"></i></li>
-          <li><i class="feather icon-trash close-card"></i></li>
-          <li><i class="feather icon-chevron-left open-card-option"></i></li>
-        </ul>
-      </div>
-    </div>
-    <div class="card-block">
-      <div class="row m-b-20 received-chat">
-        <div class="col-auto p-r-0">
-          <img src="../files/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40">
-        </div>
-        <div class="col">
-          <div class="msg">
-            <p class="m-b-0">Nice to meet you!</p>
-          </div>
-          <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
-        </div>
-      </div>
-      <div class="row m-b-20 send-chat">
-        <div class="col">
-          <div class="msg">
-            <p class="m-b-0">Nice to meet you!</p>
-          </div>
-          <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
-        </div>
-        <div class="col-auto p-l-0">
-          <img src="../files/assets/images/avatar-3.jpg" alt="user image" class="img-radius img-40">
-        </div>
-      </div>
-      <div class="row m-b-20 received-chat">
-        <div class="col-auto p-r-0">
-          <img src="../files/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40">
-        </div>
-        <div class="col">
-          <div class="msg">
-            <p class="m-b-0">Nice to meet you!</p>
-            <img src="../files/assets/images/mega-menu/01.jpg" alt="">
-            <img src="../files/assets/images/mega-menu/03.jpg" alt="">
-          </div>
-          <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
-        </div>
-      </div>
-      <div class="row m-b-20 send-chat">
-        <div class="col">
-          <div class="msg">
-            <p class="m-b-0">Come now to meet you!</p>
-          </div>
-          <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
-        </div>
-        <div class="col-auto p-l-0">
-          <img src="../files/assets/images/avatar-3.jpg" alt="user image" class="img-radius img-40">
-        </div>
-      </div>
-      <div class="row m-b-20 received-chat">
-        <div class="col-auto p-r-0">
-          <img src="../files/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40">
-        </div>
-        <div class="col">
-          <div class="msg">
-            <p class="m-b-0">Nice to meet you!</p>
-            <img src="../files/assets/images/mega-menu/03.jpg" alt="">
-          </div>
-          <p class="text-muted m-b-0"><i class="fa fa-clock-o m-r-10"></i>10:20am</p>
-        </div>
-      </div>
-      <div class="right-icon-control">
-        <div class="input-group input-group-button">
-          <input type="text" class="form-control" placeholder="Send message">
-          <div class="input-group-append">
-            <button class="btn btn-primary waves-effect waves-light" type="button"><i class="feather icon-message-circle"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="col-md-12">
-  <div class="card comp-card">
-    <div class="card-body">
-      <div class="row align-items-center">
-        <div class="col">
-          <h6 class="m-b-25">Impressions</h6>
-          <h3 class="f-w-700 text-c-blue">1,563</h3>
-          <p class="m-b-0">May 23 - June 01 (2017)</p>
-        </div>
-        <div class="col-auto">
-          <i class="fas fa-eye bg-c-blue"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card comp-card">
-    <div class="card-body">
-      <div class="row align-items-center">
-        <div class="col">
-          <h6 class="m-b-25">Goal</h6>
-          <h3 class="f-w-700 text-c-green">30,564</h3>
-          <p class="m-b-0">May 23 - June 01 (2017)</p>
-        </div>
-        <div class="col-auto">
-          <i class="fas fa-bullseye bg-c-green"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card comp-card">
-    <div class="card-body">
-      <div class="row align-items-center">
-        <div class="col">
-          <h6 class="m-b-25">Impact</h6>
-          <h3 class="f-w-700 text-c-yellow">42.6%</h3>
-          <p class="m-b-0">May 23 - June 01 (2017)</p>
-        </div>
-        <div class="col-auto">
-          <i class="fas fa-hand-paper bg-c-yellow"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-
-
                 </div>
               </div>
             </div>
+
+            <div class="pcoded-inner-content">
+
+              <div class="main-body">
+                <div class="page-wrapper">
+
+                  <div class="page-body">
+                    <div class="row">
+
+                      <div class="col-md-8">
+
+                        <div class="card list-view-media">
+                          <div class="card-block">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                              </a>
+                              <div class="media-body">
+                                <div class="col-xs-12">
+                                  <h6 class="d-inline-block">
+                                    React js </h6><br />
+                                  <label class="label label-info">Cristian Astorga</label>
+                                  <label class="label label-danger">5 Cupos disponibles</label>
+                                </div>
+                                <div class="f-13 text-muted m-b-15">
+                                  Diseño y vestuario
+                                </div>
+                                <p>Hola, en este curso encontrarass toda la ayuda necesaria para la asignatura de calculo, la cual te facilitara el proceso de aprovacion, Saludos.</p>
+                                <div class="m-t-15">
+                                  <button type="button" data-toggle="tooltip" title="Facebook" class="btn btn-facebook btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-facebook"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Twitter" class="btn btn-twitter btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-twitter"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Linkedin" class="btn btn-linkedin btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-brand-linkedin"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Drible" class="btn btn-dribbble btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-dribble"></span>
+                                  </button>
+                                </div>
+                                <div class="m-t-15">
+                                  <button class="btn btn-danger" type="button" name="button">Tomar curso</button>
+                                </div>
+                                <br /><br /><br />
+                                <div class="row">
+
+                                  <div class="col-md-12">
+                                    <div class="card">
+                                      <div class="card-header">
+                                        <h5>Temario del curso</h5>
+                                      </div>
+                                      <div class="card-block">
+                                        <div class="form-material">
+                                          <div class="right-icon-control">
+                                            <form class="form-material">
+                                              <div class="form-group form-primary">
+                                                <input type="text" name="task-insert" class="form-control" required="">
+                                                <span class="form-bar"></span>
+                                                <label class="float-label">Para crear un nuevo temario debes escribir el título y separar el contenido con una coma (,)</label>
+                                              </div>
+                                            </form>
+                                            <div class="form-icon ">
+                                              <button class="btn btn-success btn-icon  waves-effect waves-light" id="create-task">
+                                                <i class="fa fa-plus"></i>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <section id="task-container">
+                                          <ul id="task-list">
+                                            <li>
+                                              <h1>Introducción a React.js</h1>
+                                              <p>¿Qué es React.js?</p>
+                                            </li>
+                                            <li>
+                                              <h1>Fundamentos</h1>
+                                              <p>Pre-requisitos</p>
+                                            </li>
+                                            <li>
+                                              <h1>Creación y diseño de componentes</h1>
+                                              <p>Lorem Ipsum Dolor Sit Amet</p>
+                                            </li>
+                                            <li>
+                                              <h1>Mejorando la UI</h1>
+                                              <p>Lorem Ipsum Dolor Sit Amet</p>
+                                            </li>
+                                            <li>
+                                              <h1>React Router</h1>
+                                              <p>Lorem Ipsum Dolor Sit Amet</p>
+                                            </li>
+                                            <li>
+                                              <h1>Component Lifecycle</h1>
+                                              <p>Lorem Ipsum Dolor Sit Amet</p>
+                                            </li>
+                                            <li>
+                                              <h1>Conclusión</h1>
+                                              <p>Lorem Ipsum Dolor Sit Amet</p>
+                                            </li>
+                                          </ul>
+                                          <div class="text-center">
+                                            <button id="clear-all-tasks" class="btn btn-danger m-b-0" type="button">Eliminar todo el temario</button>
+                                          </div>
+                                        </section>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-header">
+                            <h5>Material del curso</h5>
+                          </div>
+                          <div class="card-block">
+                            <table id="demo-foo-filtering" class="table table-responsive footable footable-1 footable-paging footable-paging-center breakpoint-lg" style="">
+                              <thead>
+                                <tr class="footable-header">
+                                  <th class="footable-sortable footable-first-visible" style="display: table-cell;">Nombre<span class="fooicon fooicon-sort"></span></th>
+                                  <th data-breakpoints="xs" class="footable-sortable" style="display: table-cell;">Tipo<span class="fooicon fooicon-sort"></span></th>
+                                  <th data-breakpoints="xs" class="footable-sortable" style="display: table-cell;">Dueño<span class="fooicon fooicon-sort"></span></th>
+                                  <th data-breakpoints="xs" class="footable-sortable" style="display: table-cell;">Tamaño<span class="fooicon fooicon-sort"></span></th>
+                                  <th class="footable-sortable footable-last-visible" style="display: table-cell;">Modificado<span class="fooicon fooicon-sort"></span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="footable-first-visible" style="display: table-cell;"><i class="fa fa-folder"></i> clase 1</td>
+                                  <td style="display: table-cell;">carpeta</td>
+                                  <td style="display: table-cell;">yo</td>
+                                  <td style="display: table-cell;">1.6 mb</td>
+                                  <td class="footable-last-visible" style="display: table-cell;"><span class="tag tag-danger">6 de julio 2018</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="footable-first-visible" style="display: table-cell;"><i class="fa fa-folder"></i> bussinnes inteligente</td>
+                                  <td style="display: table-cell;">carpeta</td>
+                                  <td style="display: table-cell;">yo</td>
+                                  <td style="display: table-cell;">1.6 mb</td>
+                                  <td class="footable-last-visible" style="display: table-cell;"><span class="tag tag-danger">4 de julio 2018</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="footable-first-visible" style="display: table-cell;"><i class="fa fa-file-word-o"></i> actividad 1</td>
+                                  <td style="display: table-cell;">word</td>
+                                  <td style="display: table-cell;">yo</td>
+                                  <td style="display: table-cell;">1.6 mb</td>
+                                  <td class="footable-last-visible" style="display: table-cell;"><span class="tag tag-danger">6 de julio 2018</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="footable-first-visible" style="display: table-cell;"><i class="fa fa-file-excel-o"></i> hoja excel</td>
+                                  <td style="display: table-cell;">excel</td>
+                                  <td style="display: table-cell;">yo</td>
+                                  <td style="display: table-cell;">1.6 mb</td>
+                                  <td class="footable-last-visible" style="display: table-cell;"><span class="tag tag-danger">6 de julio 2018</span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="footable-first-visible" style="display: table-cell;"><i class="fa fa-file-pdf-o"></i> pauta prueba</td>
+                                  <td style="display: table-cell;">pdf</td>
+                                  <td style="display: table-cell;">yo</td>
+                                  <td style="display: table-cell;">1.6 mb</td>
+                                  <td class="footable-last-visible" style="display: table-cell;"><span class="tag tag-danger">6 de julio 2018</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tfoot></tfoot>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-block">
+                            <h3>Cursos relacionados</h3>
+                          </div>
+                        </div>
+
+                        <div class="card list-view-media">
+                          <div class="card-block">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                              </a>
+                              <div class="media-body">
+                                <div class="col-xs-12">
+                                  <h6 class="d-inline-block">
+                                    Programacion en .NET</h6><br />
+                                  <label class="label label-info">Manuel Millañir</label>
+                                  <label class="label label-danger">5 Cupos disponibles</label>
+                                </div>
+                                <div class="f-13 text-muted m-b-15">
+                                  Ingenieria en Informática
+                                </div>
+                                <p>Hola, en este curso podremos repasar y estudiar todo respecto al curso de programacion en .Net, por lo que te sera de mucha ayuda, Saludos.</p>
+                                <div class="m-t-15">
+                                  <button type="button" data-toggle="tooltip" title="Facebook" class="btn btn-facebook btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-facebook"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Twitter" class="btn btn-twitter btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-twitter"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Linkedin" class="btn btn-linkedin btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-brand-linkedin"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Drible" class="btn btn-dribbble btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-dribble"></span>
+                                  </button>
+                                </div>
+                                <div class="m-t-15">
+                                  <button class="btn btn-primary" type="button" name="button">Ver Curso</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card list-view-media">
+                          <div class="card-block">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                              </a>
+                              <div class="media-body">
+                                <div class="col-xs-12">
+                                  <h6 class="d-inline-block">
+                                    Programacion en .NET</h6><br />
+                                  <label class="label label-info">Manuel Millañir</label>
+                                  <label class="label label-danger">5 Cupos disponibles</label>
+                                </div>
+                                <div class="f-13 text-muted m-b-15">
+                                  Ingenieria en Informática
+                                </div>
+                                <p>Hola, en este curso podremos repasar y estudiar todo respecto al curso de programacion en .Net, por lo que te sera de mucha ayuda, Saludos.</p>
+                                <div class="m-t-15">
+                                  <button type="button" data-toggle="tooltip" title="Facebook" class="btn btn-facebook btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-facebook"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Twitter" class="btn btn-twitter btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-twitter"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Linkedin" class="btn btn-linkedin btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-brand-linkedin"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Drible" class="btn btn-dribbble btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-dribble"></span>
+                                  </button>
+                                </div>
+                                <div class="m-t-15">
+                                  <button class="btn btn-primary" type="button" name="button">Ver Curso</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card list-view-media">
+                          <div class="card-block">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                              </a>
+                              <div class="media-body">
+                                <div class="col-xs-12">
+                                  <h6 class="d-inline-block">
+                                    Programacion en .NET</h6><br />
+                                  <label class="label label-info">Manuel Millañir</label>
+                                  <label class="label label-danger">5 Cupos disponibles</label>
+                                </div>
+                                <div class="f-13 text-muted m-b-15">
+                                  Ingenieria en Informática
+                                </div>
+                                <p>Hola, en este curso podremos repasar y estudiar todo respecto al curso de programacion en .Net, por lo que te sera de mucha ayuda, Saludos.</p>
+                                <div class="m-t-15">
+                                  <button type="button" data-toggle="tooltip" title="Facebook" class="btn btn-facebook btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-facebook"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Twitter" class="btn btn-twitter btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-twitter"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Linkedin" class="btn btn-linkedin btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-brand-linkedin"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Drible" class="btn btn-dribbble btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-dribble"></span>
+                                  </button>
+                                </div>
+                                <div class="m-t-15">
+                                  <button class="btn btn-primary" type="button" name="button">Ver Curso</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card list-view-media">
+                          <div class="card-block">
+                            <div class="media">
+                              <a class="media-left" href="#">
+                                <img class="media-object card-list-img" src="../files/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                              </a>
+                              <div class="media-body">
+                                <div class="col-xs-12">
+                                  <h6 class="d-inline-block">
+                                    Programacion en .NET</h6><br />
+                                  <label class="label label-info">Manuel Millañir</label>
+                                  <label class="label label-danger">5 Cupos disponibles</label>
+                                </div>
+                                <div class="f-13 text-muted m-b-15">
+                                  Ingenieria en Informática
+                                </div>
+                                <p>Hola, en este curso podremos repasar y estudiar todo respecto al curso de programacion en .Net, por lo que te sera de mucha ayuda, Saludos.</p>
+                                <div class="m-t-15">
+                                  <button type="button" data-toggle="tooltip" title="Facebook" class="btn btn-facebook btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-facebook"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Twitter" class="btn btn-twitter btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-twitter"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Linkedin" class="btn btn-linkedin btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-brand-linkedin"></span>
+                                  </button>
+                                  <button type="button" data-toggle="tooltip" title="Drible" class="btn btn-dribbble btn-mini waves-effect waves-light">
+                                    <span class="icofont icofont-social-dribble"></span>
+                                  </button>
+                                </div>
+                                <div class="m-t-15">
+                                  <button class="btn btn-primary" type="button" name="button">Ver Curso</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="styleSelector">
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -966,8 +896,33 @@
   <script src="../files/assets/js/vertical/menu/menu-hori-fixed.js"></script>
   <script src="../files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="../files/assets/js/script.js"></script>
-
+  <script type="text/javascript" src="../files/assets/pages/advance-elements/select2-custom.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+
+
+
+
+
+  <script src="../files/assets/pages/waves/js/waves.min.js"></script>
+
+  <script type="text/javascript" src="../files/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+
+  <script type="text/javascript" src="../files/bower_components/modernizr/js/modernizr.js"></script>
+  <script type="text/javascript" src="../files/bower_components/modernizr/js/css-scrollbars.js"></script>
+
+  <script type="text/javascript" src="../files/bower_components/select2/js/select2.full.min.js"></script>
+
+  <script type="text/javascript" src="../files/bower_components/bootstrap-multiselect/js/bootstrap-multiselect.js">
+  </script>
+  <script type="text/javascript" src="../files/bower_components/multiselect/js/jquery.multi-select.js"></script>
+  <script type="text/javascript" src="../files/assets/js/jquery.quicksearch.js"></script>
+
+  <script type="text/javascript" src="../files/assets/pages/advance-elements/select2-custom.js"></script>
+  <script src="../files/assets/js/pcoded.min.js"></script>
+
+  <script type="text/javascript" src="../files/assets/pages/todo/todo.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
 
