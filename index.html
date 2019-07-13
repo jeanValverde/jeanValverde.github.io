@@ -47,11 +47,11 @@
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Proyectos
+              <i class="material-icons">work</i> Proyectos
             </a>
             <div class="dropdown-menu dropdown-with-icons">
               <a href="proyectos/propiedades" class="dropdown-item">
-                <i class="material-icons">home</i> Correroda Propiedades
+                <i class="material-icons">apps</i> Correroda Propiedades
               </a>
               <!--<a href="#" class="dropdown-item">
                 <i class="material-icons">content_paste</i> Documentation
@@ -101,7 +101,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-4  text-center">
-                <img src="https://avatars2.githubusercontent.com/u/44486964?s=460&v=4" alt="Rounded Image" class="rounded img-fluid">
+                <!---<img src="https://avatars2.githubusercontent.com/u/44486964?s=460&v=4" alt="Rounded Image" class="rounded img-fluid">-->
               </div>
               <div class="col-md-8">
                 <br>
@@ -162,11 +162,10 @@
                         <span class="badge badge-pill badge-primary">Java</span>
                         <span class="badge badge-pill badge-info">Oracle</span>
                         <span class="badge badge-pill badge-success">.net</span>
-                        <span class="badge badge-pill badge-warning">calidad</span>
+                        <span class="badge badge-pill badge-warning">JavaScript</span>
                         <span class="badge badge-pill badge-danger">c#</span>
                         <span class="badge badge-pill badge-rose">php</span>
                         <span class="badge badge-pill badge-success">.net</span>
-                        <span class="badge badge-pill badge-warning">seguridad</span>
                         <span class="badge badge-pill badge-danger">plsql</span>
                         <span class="badge badge-pill badge-rose">documentación</span>
                       </div>
@@ -216,7 +215,7 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-4  text-center">
-                  <img src="https://avatars2.githubusercontent.com/u/44486964?s=460&v=4" alt="Rounded Image" class="rounded img-fluid">
+                  <!---<img src="https://avatars2.githubusercontent.com/u/44486964?s=460&v=4" alt="Rounded Image" class="rounded img-fluid">-->
                 </div>
                 <div class="col-md-8">
                   <br>
@@ -277,11 +276,10 @@
                           <span class="badge badge-pill badge-primary">Java</span>
                           <span class="badge badge-pill badge-info">Oracle</span>
                           <span class="badge badge-pill badge-success">.net</span>
-                          <span class="badge badge-pill badge-warning">calidad</span>
+                          <span class="badge badge-pill badge-warning">JavaScript</span>
                           <span class="badge badge-pill badge-danger">c#</span>
                           <span class="badge badge-pill badge-rose">php</span>
                           <span class="badge badge-pill badge-success">.net</span>
-                          <span class="badge badge-pill badge-warning">seguridad</span>
                           <span class="badge badge-pill badge-danger">plsql</span>
                           <span class="badge badge-pill badge-rose">documentación</span>
                         </div>
@@ -381,9 +379,9 @@
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title">Sin cargo definido - Sin empresa </h5>
+                            <h5 class="card-title">Corredora de Propiedades Blanco Propiedades</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Desarrollador</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Desarrollador de la aplicación web www.blancopropiedades.cl en Java y MySql, un sistema responsivo y auto-administrable para publicar propiedades según los requerimientos del cliente.</p>
                             <a href="http://www.blancopropiedades.cl/blancopropiedades/" target="_blank" class="card-link">BLANCO PROPIEDADES</a>
                           </div>
                         </div>
@@ -804,7 +802,8 @@
 
 
 
-    <div class="section section-signup page-header" title="Imagen de https://cdn-images-1.medium.com/max/1600/1*OF0xEMkWBv-69zvmNs6RDQ.gif" style="background-image: url('assets-public/img/js.gif');">
+    <div class="section section-signup page-header" title="Imagen de https://cdn-images-1.medium.com/max/1600/1*OF0xEMkWBv-69zvmNs6RDQ.gif">
+      <!--style="background-image: url('assets-public/img/js.gif');"--->
       <div class="container text-center">
 
         <div class="card">
@@ -1299,6 +1298,20 @@
 
 
   <script>
+    console.log($(window).width());
+    if ($(window).width() <= 800) {
+
+      var d = document.getElementById('contenido');
+      d.style.display = (d.style.display == 'none') ? 'block' : 'none';
+
+      var f = document.getElementById('contenidoMovil');
+      f.style.display = (f.style.display == 'none') ? 'block' : 'none';
+
+      document.body.className = 'profile-page sidebar-collapse';
+
+
+    }
+    /*
     $(window).resize(function() {
 
       if ($(window).width() <= 800) {
@@ -1326,6 +1339,7 @@
 
 
     });
+     */
   </script>
 
 
