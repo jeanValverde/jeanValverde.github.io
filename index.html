@@ -80,25 +80,23 @@
                 class="dropdown-toggle nav-link"
                 data-toggle="dropdown"
               >
-                <i class="material-icons">apps</i> Sobre Mi
+                <i class="material-icons">person_pin</i> Sobre Mi
               </a>
               <div class="dropdown-menu dropdown-with-icons">
-                <a href="../index.html" class="dropdown-item">
-                  <i class="material-icons">layers</i> Intereses Profesionales
+                <a href="#interesesProfesionales" class="dropdown-item">
+                  <i class="material-icons">work</i> Intereses Profesionales
                 </a>
                 <a
-                  href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html"
+                  href="#formacionAcademica"
                   class="dropdown-item"
                 >
-                  <i class="material-icons">content_paste</i> Formacion
-                  Academica
+                  <i class="material-icons">school</i> Formación Académica
                 </a>
                 <a
-                  href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html"
+                  href="#cursosCerficaciones"
                   class="dropdown-item"
                 >
-                  <i class="material-icons">content_paste</i> Cursos Y
-                  certificaciones
+                  <i class="material-icons">trending_up</i> Cursos y certificaciones
                 </a>
               </div>
             </li>
@@ -106,20 +104,18 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="javascript:void(0)"
-                onclick="scrollToDownload()"
+                href="#proyectos"
               >
-                <i class="material-icons">cloud_download</i> Proyectos
+                <i class="material-icons">apps</i> Proyectos
               </a>
             </li>
 
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="javascript:void(0)"
-                onclick="scrollToDownload()"
+                href="#contacto"
               >
-                <i class="material-icons">cloud_download</i> Contacto
+                <i class="material-icons">email</i> Contacto
               </a>
             </li>
 
@@ -129,9 +125,9 @@
                 rel="tooltip"
                 title=""
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
+                href="https://www.linkedin.com/in/jeanvalverde/"
                 target="_blank"
-                data-original-title="Like us on Facebook"
+                data-original-title="Perfil en Linkedin"
               >
                 <i class="fa fa-linkedin"></i>
               </a>
@@ -142,9 +138,9 @@
                 rel="tooltip"
                 title=""
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="https://github.com/jeanValverde"
                 target="_blank"
-                data-original-title="Follow us on Instagram"
+                data-original-title="Proyectos en GitHub"
               >
                 <i class="fa fa-github"></i>
               </a>
@@ -182,7 +178,8 @@
                     <div class="ripple-container"></div
                   ></a>
                   <a
-                    href="#pablo"
+                    href="https://www.linkedin.com/in/jeanvalverde/"
+                    target="_black"
                     class="btn btn-just-icon btn-link btn-twitter"
                     ><i class="fa fa-linkedin"></i
                   ></a>
@@ -200,6 +197,7 @@
             </p>
           </div>
 
+          <div id="proyectos" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
               <hr />
@@ -217,8 +215,8 @@
                     <i class="material-icons">check</i>
                   </div>
                   <b>
-                    <a href="#" class="text-success">Sistema Bacon</a> y
-                    <a href="#" class="text-success">Bacon desktop</a>
+                    <a href="https://github.com/jeanValverde/bacon" target="_black" class="text-success">Sistema Bacon</a> y
+                    <a href="https://github.com/jeanValverde/bacon-desktop" target="_black" class="text-success">Bacon desktop</a>
                   </b>
                 </div>
               </div>
@@ -226,42 +224,90 @@
               <br />
               <div class="text-center">
                 <span class="badge badge-pill badge-primary">Java</span>
-                <span class="badge badge-pill badge-success">Spring Boot</span>
-                <span class="badge badge-pill badge-warning">Amazon RDS</span>
-                <span class="badge badge-pill badge-warning">Amazon s3</span>
+                <span class="badge badge-pill badge-primary">Spring Boot</span>
+                <span class="badge badge-pill badge-primary">Amazon RDS</span>
+                <span class="badge badge-pill badge-primary">Amazon s3</span>
                 <span class="badge badge-pill badge-primary">heroku</span>
                 <span class="badge badge-pill badge-primary">Maven</span>
-                <span class="badge badge-pill badge-danger"
+                <span class="badge badge-pill badge-primary"
                   >Oracle Data Base</span
                 >
-                <span class="badge badge-pill badge-success"
+                <span class="badge badge-pill badge-primary"
                   >Spring Data JPA
                 </span>
-                <span class="badge badge-pill badge-success">Thymeleaf</span>
-                <span class="badge badge-pill badge-success"
+                <span class="badge badge-pill badge-primary">Thymeleaf</span>
+                <span class="badge badge-pill badge-primary"
                   >Spring Security</span
                 >
                 <span class="badge badge-pill badge-primary"
                   >Validador HTML Bootstrap</span
                 >
-                <span class="badge badge-pill badge-info">Electron NET</span>
+                <span class="badge badge-pill badge-primary">Electron NET</span>
                 <span class="badge badge-pill badge-primary">.NET</span>
-                <span class="badge badge-pill badge-warning">javaScript</span>
-                <span class="badge badge-pill badge-info">.Net Core 2.1</span>
+                <span class="badge badge-pill badge-primary">javaScript</span>
+                <span class="badge badge-pill badge-primary">.Net Core 2.1</span>
               </div>
 
               <p class="mt-2">
-                Lider de proyecto de 6 integrantes para crear un sistema web y
-                de escritorio para la gestión y control de bodega, finanzas,
-                cocina, bar y administración de un restaurante para portafolio
-                de título de la carrera de ingeniería en informática en Duoc Uc
-                sede Viña del Mar, Chile.
-                <br />
-                Puedes revisar el repositorio en GitHub de este proyecto y su
-                lanzamiento en los servidores de Heroku.
 
-                <br />
+                  Líder de proyecto de 6 integrantes para crear un sistema web y de escritorio para la gestión y control de bodega, 
+                  finanzas, cocina, bar y administración de un restaurante para portafolio de título de la carrera 
+                  ingeniería en informática Duoc Uc sede Viña del Mar, Chile.
 
+                <br/> <br/>
+                Algunas de las actividades que desempeñe durante este proyecto:
+                <ul>
+
+                    <li>
+                      <p>
+                          Planificar los componentes a desarrollar para cada integrante.
+                      </p>
+                    </li>
+
+                    <li>
+                        <p>
+                          Planificar el diseño y arquitectura del sistema web y escritorio.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Encargado de configuración de los proyectos.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                          Encargado de servicios de Amazon Relational Database Service (RDS) y Amazon Simple Storage Service (S3).
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                          Encargado de despliegue de los proyectos automatizados en servicios Heroku.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                          Integración de los componentes en Git y GitHub, resolución de conflictos y unión de ramas.
+                        </p>
+                    </li>
+
+                    
+                    <li>
+                        <p>
+                          Desarrollo y programación en Java y .Net
+                        </p>
+                    </li>
+                    
+                  </ul>
+                <br />
+                <p>
+                    Puedes revisar el repositorio en GitHub de este proyecto y su lanzamiento en los servidores de Heroku.
+
+                </p>
+              
                 <a
                   href="https://github.com/jeanValverde/bacon"
                   target="_black"
@@ -270,7 +316,7 @@
                 ></a>
 
                 <a
-                  href="https://github.com/jeanValverde/bacon"
+                  href="https://evening-reef-92725.herokuapp.com"
                   target="_black"
                   class="btn btn-just-icon btn-link btn-dribbble"
                   ><i class="fa fa-rocket"></i
@@ -389,7 +435,7 @@
                   </div>
                   <b>
                     <a href="#" class="text-success"
-                      >Pagina Web de Transporte público y turismo</a
+                      >Página Web de Transporte público y turismo</a
                     ></b
                   >
                 </div>
@@ -398,11 +444,9 @@
               <br />
               <div class="text-center">
                 <span class="badge badge-pill badge-primary">PHP</span>
-                <span class="badge badge-pill badge-info">MySql Data Base</span>
+                <span class="badge badge-pill badge-primary">MySql Data Base</span>
                 <span class="badge badge-pill badge-primary">Bootstrap</span>
-                <span class="badge badge-pill badge-primary"
-                  >Validador HTML Bootstrap</span
-                >
+                <span class="badge badge-pill badge-primary">Validador HTML Bootstrap</span>
               </div>
 
               <p class="mt-2">
@@ -414,7 +458,7 @@
                 <br />
 
                 <a
-                  href="https://github.com/jeanValverde/bacon"
+                  href="https://github.com/jeanValverde/portalTuristico"
                   target="_black"
                   class="btn btn-just-icon btn-link btn-dribbble"
                   ><i class="fa fa-github"></i
@@ -454,8 +498,8 @@
                     <i class="material-icons">check</i>
                   </div>
                   <b>
-                    <a href="#" class="text-success"
-                      >Web Blanco Propiedades</a
+                    <a href="http://www.blancopropiedades.cl" target="_black" class="text-success"
+                      >Página Web Blanco Propiedades</a
                     ></b
                   >
                 </div>
@@ -464,23 +508,18 @@
               <br />
               <div class="text-center">
                 <span class="badge badge-pill badge-primary">Java</span>
-                <span class="badge badge-pill badge-info">MySql Data Base</span>
-                <span class="badge badge-pill badge-success">Servlet</span>
+                <span class="badge badge-pill badge-primary">MySql Data Base</span>
+                <span class="badge badge-pill badge-primary">Servlet</span>
               </div>
 
               <p class="mt-2">
-                I think that’s a responsibility that I have, to push
-                possibilities, to show people, this is the level that things
-                could be at. So when you get something that has the name Kanye
-                West on it, it’s supposed to be pushing the furthest
-                possibilities. I will be the leader of a company that ends up
-                being worth billions of dollars, because I got the answers. I
-                understand culture. I am the nucleus.
-
+                  Desarrollador de la aplicación web blanco propiedades en Java y
+                  MySql, un sistema responsivo y auto-administrable para publicar propiedades
+                  según los requerimientos del cliente.                  
                 <br />
 
                 <a
-                  href="https://github.com/jeanValverde/bacon"
+                  href="http://www.blancopropiedades.cl"
                   target="_black"
                   class="btn btn-just-icon btn-link btn-dribbble"
                   ><i class="fa fa-rocket"></i
@@ -505,6 +544,7 @@
             </div>
           </div>
 
+          <div id="interesesProfesionales" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
               <br />
@@ -515,29 +555,14 @@
                 Interes Profesionales
               </h6>
 
-              <section class="timeline">
-                <ul>
-                  <li>
-                    <div>
-                      <time>1934</time> At vero eos et accusamus et iusto odio
-                      dignissimos ducimus qui blanditiis praesentium At vero eos
-                      et accusamus et iusto odio dignissimos ducimus qui
-                      blanditiis praesentium
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <time>1934</time> At vero eos et accusamus et iusto odio
-                      dignissimos ducimus qui blanditiis praesentium At vero eos
-                      et accusamus et iusto odio dignissimos ducimus qui
-                      blanditiis praesentium
-                    </div>
-                  </li>
-                </ul>
-              </section>
+              
+
+
             </div>
           </div>
 
+          
+          <div id="formacionAcademica" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
               <br />
@@ -545,25 +570,26 @@
               <br />
               <hr class="text-primary" />
               <h6 class="title">
-                Formacion Academica
+                  Formación Académica
               </h6>
 
               <section class="timeline">
                 <ul>
                   <li>
                     <div>
-                      <time>1934</time> At vero eos et accusamus et iusto odio
-                      dignissimos ducimus qui blanditiis praesentium At vero eos
-                      et accusamus et iusto odio dignissimos ducimus qui
-                      blanditiis praesentium
+                      <time><img src="assets-public/img/sede_vina.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid" style="width: 20%;">  &nbsp; Duoc UC</time> 
+                      Ingeniería en Informática en el instituto profesional Departamento Universitario Obrero Campesino
+                      <br/>
+                      <small  ><strong>2016 - Cursando</strong></small>
                     </div>
+                    
                   </li>
                   <li>
                     <div>
-                      <time>1934</time> At vero eos et accusamus et iusto odio
-                      dignissimos ducimus qui blanditiis praesentium At vero eos
-                      et accusamus et iusto odio dignissimos ducimus qui
-                      blanditiis praesentium
+                      <time>Escuela Pichasca</time> 
+                      Estudios de educación media y básica.
+                      <br/>
+                      <small  ><strong>2012 - 2015</strong></small>
                     </div>
                   </li>
                 </ul>
@@ -571,6 +597,9 @@
             </div>
           </div>
 
+
+
+          <div id="cursosCerficaciones" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
               <br />
@@ -583,38 +612,49 @@
 
               <ul style="list-style: none;">
                 <li>
+                  <a href="https://platzi.com/@jeanvalverde/curso/1557-git-github/diploma/detalle/" 
+                   target="_black"
+                  >
                   <img
-                    src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
-                    class="mr-4"
-                    alt=""
-                    width="50px"
-                  />
-                  Curso profe
+                  src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
+                  class="mr-4"
+                  alt=""
+                  width="50px"
+                />
+                </a>
+                 
+                Curso profesional de Git y GitHub (Platzi)
                 </li>
                 <br />
                 <li>
-                  <img
+                  <a href="https://platzi.com/@jeanvalverde/curso/1650-prework/diploma/detalle/" target="_black" >
+                    <img
                     src="https://static.platzi.com/media/achievements/badge-prework-da6b0493-9908-40f3-ad53-f5d330b995b8.png"
                     class="mr-4"
                     alt=""
                     width="50px"
                   />
-                  Curso profe
+                  </a>
+                  Curso de Prework: Buenas Prácticas y Entorno de Desarrollo (Platzi)
                 </li>
                 <br />
                 <li>
-                  <img
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/2ZBKSY8VFYGW?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_black" >
+                    <img
                     src="https://caldo.ca/wp-content/uploads/2018/06/PUC-chile-logo.png"
                     class="mr-4"
                     alt=""
                     width="50px"
                   />
-                  Curso profe
+                  </a>
+                 
+                  Programación en Python I a cargo de Pontificia Universidad Católica de Chile (Courcera)
                 </li>
               </ul>
             </div>
           </div>
 
+          <div id="contacto" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
               <hr class="text-primary" />
@@ -630,9 +670,8 @@
                       <i class="fa fa-envelope"></i>
                     </div>
                     <div class="description">
-                      <h5 class="info-title">Correos electronicos</h5>
-                      <p>Michael Jordan</p>
-                      <p>Michael Jordan</p>
+                      <h5 class="info-title">jean.valverde02@gmail.com  
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -644,9 +683,9 @@
                     </div>
                     <div class="description">
                       <h5 class="info-title">
-                        Viña del Mar, Region de Valapaiso
+                        Viña del Mar, Región de Valparaíso
                       </h5>
-                      <p>Chorrillos</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -818,7 +857,9 @@
         bottom: 0;
         width: 400px;
         padding: 15px;
-        background: #5555;
+        background: #fff;
+        border: solid 1px #9c27b0;
+        border-radius: 2%;
       }
 
       .timeline ul li div::before {
@@ -837,7 +878,7 @@
       .timeline ul li:nth-child(odd) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent #5555 transparent transparent;
+        border-color: transparent #9c27b0 transparent transparent;
       }
 
       .timeline ul li:nth-child(even) div {
@@ -847,7 +888,7 @@
       .timeline ul li:nth-child(even) div::before {
         right: -15px;
         border-width: 8px 0 8px 16px;
-        border-color: transparent transparent transparent #5555;
+        border-color: transparent transparent transparent #9c27b0;
       }
 
       time {
@@ -865,7 +906,7 @@
       }
 
       .timeline ul li.in-view::after {
-        background: #5555;
+        background: #9c27b0;
       }
 
       .timeline ul li div {
@@ -905,9 +946,7 @@
         .timeline ul li {
           margin-left: 20px;
         }
-        .timeline ul li div {
-          width: calc(100vw - 91px);
-        }
+
         .timeline ul li:nth-child(even) div {
           left: 45px;
         }
