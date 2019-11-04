@@ -83,9 +83,9 @@
                 <i class="material-icons">person_pin</i> Sobre Mi
               </a>
               <div class="dropdown-menu dropdown-with-icons">
-                <a href="#interesesProfesionales" class="dropdown-item">
+                <!---<a href="#interesesProfesionales" class="dropdown-item">
                   <i class="material-icons">work</i> Intereses Profesionales
-                </a>
+                </a>-->
                 <a
                   href="#formacionAcademica"
                   class="dropdown-item"
@@ -168,7 +168,7 @@
                   />
                 </div>
                 <div class="name">
-                  <h3 class="title">Ingeniería en Informática/Estudiante</h3>
+                  <h3 class="title">Ingeniería en Informática/Desarrollador Junior</h3>
                   <h6>Jean Carlos Gonzalez Valverde</h6>
                   <a
                     href="https://github.com/jeanValverde"
@@ -190,10 +190,9 @@
 
           <div class="description text-center">
             <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.
+                Soy un estudiante y desarrollador junior de último semestre de la carrera de ingeniería en informática que ha realizado algunos proyectos hechos en Java y PHP. 
+                 Busco colaborar como programador en back-end Java y tecnologías relacionadas como COBOL, 
+                además, me interesa profundizar en el área de la inteligencia artificial con Python.
             </p>
           </div>
 
@@ -466,7 +465,7 @@
 
                 <button
                   class="btn btn-secondary"
-                  onclick="ocutar(document.getElementById('img-portal-turismo'))"
+                  onclick="ocutarPortal(document.getElementById('img-portal-turismo'))"
                 >
                   Ver imagen
                 </button>
@@ -527,7 +526,7 @@
 
                 <button
                   class="btn btn-secondary"
-                  onclick="ocutar(document.getElementById('img-blanco-propiedades'))"
+                  onclick="ocutarBlanco(document.getElementById('img-blanco-propiedades'))"
                 >
                   Ver imagen
                 </button>
@@ -544,6 +543,8 @@
             </div>
           </div>
 
+
+          <!------
           <div id="interesesProfesionales" ></div>
           <div class="row">
             <div class="col-md-10 ml-auto mr-auto">
@@ -560,6 +561,7 @@
 
             </div>
           </div>
+-->
 
           
           <div id="formacionAcademica" ></div>
@@ -960,21 +962,33 @@
 
     <script type="text/javascript">
       let imgblanco = false;
+      let imgportal = false;
 
-      document.getElementById("img-blanco-propiedades").style.visibility =
-        "hidden";
+      document.getElementById("img-blanco-propiedades").style.visibility = "hidden";
       document.getElementById("img-blanco-propiedades").style.display = "none";
 
       document.getElementById("img-portal-turismo").style.visibility = "hidden";
       document.getElementById("img-portal-turismo").style.display = "none";
 
-      function ocutar(elemento) {
+      function ocutarBlanco(elemento) {
         if (imgblanco) {
           imgblanco = false;
           elemento.style.visibility = "hidden";
           elemento.style.display = "none";
         } else {
           imgblanco = true;
+          elemento.style.visibility = "";
+          elemento.style.display = "";
+        }
+      }
+
+      function ocutarPortal(elemento) {
+        if (imgportal) {
+          imgportal = false;
+          elemento.style.visibility = "hidden";
+          elemento.style.display = "none";
+        } else {
+          imgportal = true;
           elemento.style.visibility = "";
           elemento.style.display = "";
         }
