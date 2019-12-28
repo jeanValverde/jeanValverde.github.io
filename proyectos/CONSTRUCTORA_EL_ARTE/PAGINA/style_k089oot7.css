@@ -1,0 +1,13 @@
+.style-k089oot7bg {
+  border: 0px solid rgba(148, 148, 148, 1);
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 0;
+}
+.style-k089oot7inlineContent,
+.style-k089oot7bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

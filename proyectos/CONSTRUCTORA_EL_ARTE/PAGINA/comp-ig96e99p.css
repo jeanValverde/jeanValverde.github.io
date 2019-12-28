@@ -1,0 +1,78 @@
+#comp-ig96e99p #comp-ig96e99pinlineContent,
+[id^="comp-ig96e99p"] [id^="comp-ig96e99p__"][id$="inlineContent"] {
+  height: auto;
+  width: 300px;
+}
+
+#comp-ig96e99p #comp-ig96e99pinlineContent-gridWrapper,
+[id^="comp-ig96e99p"] [id^="comp-ig96e99p__"][id$="inlineContent-gridWrapper"] {
+}
+
+#comp-ig96e99p #comp-ig96e99pinlineContent-gridContainer,
+[id^="comp-ig96e99p"]
+  [id^="comp-ig96e99p__"][id$="inlineContent-gridContainer"] {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: auto;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 100%;
+}
+
+[id^="comp-ig96e99p"]
+  #comp-ig96e99pinlineContent-gridContainer
+  > #comp-ig97m2j4,
+[id^="comp-ig96e99p__"] > [id^="comp-ig97m2j4"] {
+  position: relative;
+  margin: 34px 0px 16px 0;
+  left: 28px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+[id^="comp-ig96e99p"]
+  #comp-ig96e99pinlineContent-gridContainer
+  > #comp-ig97o77u,
+[id^="comp-ig96e99p__"] > [id^="comp-ig97o77u"] {
+  position: relative;
+  margin: 0px 0px 36px 0;
+  left: 28px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-ig96e99pinlineContent,
+[id^="comp-ig96e99p__"][id$="inlineContent"] {
+  position: relative;
+}
+
+#comp-ig96e99pcenteredContent,
+[id^="comp-ig96e99p__"][id$="centeredContent"] {
+  position: relative;
+}
+
+#comp-ig96e99pinlineContent-gridWrapper,
+[id^="comp-ig96e99p__"][id$="inlineContent-gridWrapper"] {
+  pointer-events: none;
+}
+
+#comp-ig96e99pinlineContent-gridContainer > *,
+[id^="comp-ig96e99p__"][id$="inlineContent-gridContainer"] > * {
+  pointer-events: auto;
+}
+
+#comp-ig96e99pinlineContent-gridContainer > [id$="-rotated-wrapper"],
+[id^="comp-ig96e99p__"][id$="inlineContent-gridContainer"]
+  > [id$="-rotated-wrapper"] {
+  pointer-events: none;
+}
+
+#comp-ig96e99pinlineContent-gridContainer > [id$="-rotated-wrapper"] > *,
+[id^="comp-ig96e99p__"][id$="inlineContent-gridContainer"]
+  > [id$="-rotated-wrapper"]
+  > * {
+  pointer-events: auto;
+}

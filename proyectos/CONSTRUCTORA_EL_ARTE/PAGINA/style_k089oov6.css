@@ -1,0 +1,18 @@
+.style-k089oov6bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089oov6[data-state~="mobileView"] .style-k089oov6bg {
+  left: 10px;
+  right: 10px;
+}
+.style-k089oov6inlineContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

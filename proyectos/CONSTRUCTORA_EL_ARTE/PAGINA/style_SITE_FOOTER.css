@@ -1,0 +1,71 @@
+     
+            #SITE_FOOTER #SITE_FOOTERinlineContent,
+            [id^="SITE_FOOTER"] [id^="SITE_FOOTER__"][id$="inlineContent"] {
+     height: auto;
+     width: 100%;
+ }
+ 
+ #SITE_FOOTER #SITE_FOOTERinlineContent-gridWrapper, [id^="SITE_FOOTER"] [id^="SITE_FOOTER__"][id$="inlineContent-gridWrapper"] {
+ 
+ }
+ 
+ #SITE_FOOTER #SITE_FOOTERinlineContent-gridContainer,
+            [id^="SITE_FOOTER"] [id^="SITE_FOOTER__"][id$="inlineContent-gridContainer"] {
+     position: static;
+     display: grid;
+     height: auto;
+     width: 100%;
+     min-height: auto;
+     grid-template-rows: 1fr;
+     grid-template-columns: 100%;
+ }
+ 
+ [id^="SITE_FOOTER"] #SITE_FOOTERinlineContent-gridContainer > #comp-ig6adlrb,
+        [id^="SITE_FOOTER__"] > [id^="comp-ig6adlrb"] {
+     position: relative;
+     margin: 24px 0px 29px calc((100% - 980px) * 0.5);
+     left: 20px;
+     grid-area: 1 / 1 / 2 / 2;
+     justify-self: start;
+     align-self: start;
+ }
+ 
+ [id^="SITE_FOOTER"] #SITE_FOOTERinlineContent-gridContainer > #comp-ighn7sv3,
+        [id^="SITE_FOOTER__"] > [id^="comp-ighn7sv3"] {
+     position: relative;
+     margin: 18px 0px 22px calc((100% - 980px) * 0.5);
+     left: 850px;
+     grid-area: 1 / 1 / 2 / 2;
+     justify-self: start;
+     align-self: start;
+ }
+ 
+ #SITE_FOOTERinlineContent,
+                 [id^="SITE_FOOTER__"][id$="inlineContent"] {
+     position: relative;
+ }
+ 
+ #SITE_FOOTERcenteredContent,
+                 [id^="SITE_FOOTER__"][id$="centeredContent"] {
+     position: relative;
+ }
+ 
+ #SITE_FOOTERinlineContent-gridWrapper,
+                 [id^="SITE_FOOTER__"][id$="inlineContent-gridWrapper"] {
+     pointer-events: none;
+ }
+ 
+ #SITE_FOOTERinlineContent-gridContainer > *,
+                 [id^="SITE_FOOTER__"][id$="inlineContent-gridContainer"] > * {
+     pointer-events: auto;
+ }
+ 
+ #SITE_FOOTERinlineContent-gridContainer > [id$="-rotated-wrapper"],
+                 [id^="SITE_FOOTER__"][id$="inlineContent-gridContainer"] > [id$="-rotated-wrapper"] {
+     pointer-events: none;
+ }
+ 
+ #SITE_FOOTERinlineContent-gridContainer > [id$="-rotated-wrapper"] > *,
+                 [id^="SITE_FOOTER__"][id$="inlineContent-gridContainer"] > [id$="-rotated-wrapper"] > * {
+     pointer-events: auto;
+ }

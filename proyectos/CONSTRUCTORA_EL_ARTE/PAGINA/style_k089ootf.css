@@ -1,0 +1,174 @@
+.style-k089ootf_pos {
+  height: 2.3em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.style-k089ootfshowMore {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.3em !important;
+  padding: 0 10px;
+  text-decoration: underline !important;
+  color: #2f2e2e;
+  font: normal normal normal 12px/1.4em raleway, sans-serif;
+}
+.style-k089ootf[data-state~="fullView"] .style-k089ootfshowMore {
+  display: none;
+}
+.style-k089ootfitemsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2.3em;
+  left: 0;
+}
+.style-k089ootfimageItemtitle,
+.style-k089ootfimageItemdescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+}
+.style-k089ootfimageItemimageWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+}
+.style-k089ootfimageItem_imgBorder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  border: solid 0px rgba(47, 46, 46, 1);
+  background: rgba(47, 46, 46, 1);
+}
+.style-k089ootfimageItemimage {
+  border-radius: 0;
+}
+.style-k089ootfimageItemzoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease 0s;
+  overflow: hidden;
+}
+.style-k089ootfimageItem_zoomPadding {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}
+.style-k089ootfimageItemtitle {
+  font: normal normal normal 22px/1.4em avenir-lt-w01_85-heavy1475544,
+    sans-serif;
+  color: #3b3a3a;
+  line-height: 1.3em;
+  max-height: 3.9em;
+}
+.style-k089ootfimageItemdescription {
+  color: #2f2e2e;
+  font: normal normal normal 12px/1.4em raleway, sans-serif;
+  line-height: 1.3em;
+  max-height: 3.9em;
+}
+.style-k089ootfimageItemlink {
+  display: block;
+  font: normal normal normal 12px/1.4em raleway, sans-serif;
+  position: relative;
+  width: 30px;
+}
+.style-k089ootfimageItem_linkIcon {
+  background-color: #2f2e2e;
+  background-image: url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/viewer/gallery/link_icon.png);
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  width: 30px;
+  height: 30px;
+}
+.style-k089ootfimageItem_linkIcon:hover {
+  background-color: rgba(160, 160, 159, 1);
+}
+.style-k089ootfimageItemtitle:not(:empty)
+  + .style-k089ootfimageItemdescription:not(:empty) {
+  margin-top: 5px;
+}
+.style-k089ootfimageItem[data-state~="link"]
+  .style-k089ootfimageItemtitle:not(:empty)
+  ~ .style-k089ootfimageItemlink {
+  margin-top: 13px;
+}
+.style-k089ootfimageItem[data-state~="link"]
+  .style-k089ootfimageItemdescription:not(:empty)
+  + .style-k089ootfimageItemlink {
+  margin-top: 13px;
+}
+.style-k089ootfimageItem[data-state~="alignLeft"] .style-k089ootfimageItemlink {
+  margin: 0 auto 0 0;
+}
+.style-k089ootfimageItem[data-state~="alignCenter"]
+  .style-k089ootfimageItemlink {
+  margin: auto;
+}
+.style-k089ootfimageItem[data-state~="alignRight"]
+  .style-k089ootfimageItemlink {
+  margin: 0 0 0 auto;
+}
+.style-k089ootfimageItem[data-state~="alignLeft"] .style-k089ootfimageItemzoom {
+  text-align: left;
+}
+.style-k089ootfimageItem[data-state~="alignCenter"]
+  .style-k089ootfimageItemzoom {
+  text-align: center;
+}
+.style-k089ootfimageItem[data-state~="alignRight"]
+  .style-k089ootfimageItemzoom {
+  text-align: right;
+}
+.style-k089ootfimageItem:hover .style-k089ootfimageItemzoom {
+  opacity: 1;
+  transition: opacity 0.4s ease 0s;
+}
+.style-k089ootfimageItem_table {
+  display: table;
+  height: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+.style-k089ootfimageItem_inner {
+  vertical-align: middle;
+  display: table-cell;
+}
+.style-k089ootfimageItem[data-is-responsive="true"]
+  .style-k089ootfimageItemlink,
+.style-k089ootfimageItem[data-is-responsive="true"]
+  .style-k089ootfimageItemimageWrapper,
+.style-k089ootfimageItem[data-is-responsive="true"]
+  .style-k089ootfimageItemimgBorder,
+.style-k089ootfimageItem[data-is-responsive="true"]
+  .style-k089ootfimageItemimage,
+.style-k089ootfimageItem[data-is-responsive="true"] wix-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089ootfimageItemimageimage {
+  position: static;
+  box-shadow: #000 0 0 0;
+  user-select: none;
+}

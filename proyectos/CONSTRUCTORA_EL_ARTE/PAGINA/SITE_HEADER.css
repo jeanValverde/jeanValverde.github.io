@@ -1,0 +1,26 @@
+#SITE_HEADERinlineContent {
+    height: 100px;
+    width: 100%;
+    min-height: ;
+    position: relative;
+}
+
+#SITE_HEADERcenteredContent {
+    position: relative;
+}
+
+#SITE_HEADERinlineContent-gridWrapper {
+    pointer-events: none;
+}
+
+#SITE_HEADERinlineContent-gridContainer>* {
+    pointer-events: auto;
+}
+
+#SITE_HEADERinlineContent-gridContainer>[id$="-rotated-wrapper"] {
+    pointer-events: none;
+}
+
+#SITE_HEADERinlineContent-gridContainer>[id$="-rotated-wrapper"]>* {
+    pointer-events: auto;
+}

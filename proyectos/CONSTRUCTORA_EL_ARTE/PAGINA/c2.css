@@ -1,0 +1,13 @@
+.c2bg {
+  border: 0px solid rgba(148, 148, 148, 1);
+  background-color: rgba(237, 205, 31, 1);
+  border-radius: 0;
+}
+.c2inlineContent,
+.c2bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

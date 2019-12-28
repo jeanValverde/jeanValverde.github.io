@@ -1,0 +1,123 @@
+.style-k089oowrscreenWidthBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089oowr[data-state~="fixedPosition"] {
+  position: fixed !important;
+  left: auto !important;
+  z-index: 50;
+}
+.style-k089oowr[data-state~="fixedPosition"].style-k089oowr_footer {
+  top: auto;
+  bottom: 0;
+}
+.style-k089oowr_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 0px solid rgba(160, 160, 159, 1);
+  border-bottom: 0px solid rgba(160, 160, 159, 1);
+}
+.style-k089oowrbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089oowr[data-state~="mobileView"] .style-k089oowrbg {
+  left: 10px;
+  right: 10px;
+}
+.style-k089oowr_bg-center {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0;
+}
+.style-k089oowrinlineContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089oowrcenteredContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*seconds*/
+
+.style-k089ooqfscreenWidthBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089ooqf[data-state~="fixedPosition"] {
+  position: fixed !important;
+  left: auto !important;
+  z-index: 50;
+}
+.style-k089ooqf[data-state~="fixedPosition"].style-k089ooqf_footer {
+  top: auto;
+  bottom: 0;
+}
+.style-k089ooqf_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(30, 45, 59, 1);
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+.style-k089ooqfbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089ooqf[data-state~="mobileView"] .style-k089ooqfbg {
+  left: 10px;
+  right: 10px;
+}
+.style-k089ooqf_bg-center {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(30, 45, 59, 1);
+  border-radius: 0;
+}
+.style-k089ooqfinlineContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.style-k089ooqfcenteredContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

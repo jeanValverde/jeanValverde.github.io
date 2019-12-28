@@ -1,0 +1,78 @@
+#comp-igahubrl #comp-igahubrlinlineContent,
+[id^="comp-igahubrl"] [id^="comp-igahubrl__"][id$="inlineContent"] {
+  height: auto;
+  width: 1898px;
+}
+
+#comp-igahubrl #comp-igahubrlinlineContent-gridWrapper,
+[id^="comp-igahubrl"] [id^="comp-igahubrl__"][id$="inlineContent-gridWrapper"] {
+}
+
+#comp-igahubrl #comp-igahubrlinlineContent-gridContainer,
+[id^="comp-igahubrl"]
+  [id^="comp-igahubrl__"][id$="inlineContent-gridContainer"] {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: 683px;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 100%;
+}
+
+[id^="comp-igahubrl"]
+  #comp-igahubrlinlineContent-gridContainer
+  > #comp-ig97s46y,
+[id^="comp-igahubrl__"] > [id^="comp-ig97s46y"] {
+  position: relative;
+  margin: 57px 0px 13px 0;
+  left: 1423px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+[id^="comp-igahubrl"]
+  #comp-igahubrlinlineContent-gridContainer
+  > #comp-ig97s470,
+[id^="comp-igahubrl__"] > [id^="comp-ig97s470"] {
+  position: relative;
+  margin: 0px 0px 10px 0;
+  left: 1425px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-igahubrlinlineContent,
+[id^="comp-igahubrl__"][id$="inlineContent"] {
+  position: relative;
+}
+
+#comp-igahubrlcenteredContent,
+[id^="comp-igahubrl__"][id$="centeredContent"] {
+  position: relative;
+}
+
+#comp-igahubrlinlineContent-gridWrapper,
+[id^="comp-igahubrl__"][id$="inlineContent-gridWrapper"] {
+  pointer-events: none;
+}
+
+#comp-igahubrlinlineContent-gridContainer > *,
+[id^="comp-igahubrl__"][id$="inlineContent-gridContainer"] > * {
+  pointer-events: auto;
+}
+
+#comp-igahubrlinlineContent-gridContainer > [id$="-rotated-wrapper"],
+[id^="comp-igahubrl__"][id$="inlineContent-gridContainer"]
+  > [id$="-rotated-wrapper"] {
+  pointer-events: none;
+}
+
+#comp-igahubrlinlineContent-gridContainer > [id$="-rotated-wrapper"] > *,
+[id^="comp-igahubrl__"][id$="inlineContent-gridContainer"]
+  > [id$="-rotated-wrapper"]
+  > * {
+  pointer-events: auto;
+}
