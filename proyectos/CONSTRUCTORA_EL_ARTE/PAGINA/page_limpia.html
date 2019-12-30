@@ -18,22 +18,20 @@
 
         <div>
 
-            <div style="position:relative">
+            <div style="position:relative" >
 
-                <!--video e imagen-->
                 <div style="top: 50px; min-height: calc(100vh - 50px); height: 5599px; width: 1440px;" class="siteBackground">
-                    <div style="top: 50px; background-color: rgb(255, 255, 255); position: fixed; width: 100%; height: 100%;"
-                        data-position="fixed" data-align="center" data-fitting="fill" class="siteBackgroundcurrent">
-                        <div style="position: absolute; top: 0px; width: 100%; opacity: 1; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100%; background-image: url(&quot;https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp&quot;);"
-                            data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage"
-                            data-image-css="{&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundPosition&quot;:&quot;center center&quot;,&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;height&quot;:&quot;100%&quot;}">
+
+                    <div style="top: 50px; background-color: rgb(255, 255, 255); position: fixed; width: 100%; height: 100%;" data-position="fixed" data-align="center" data-fitting="fill" class="siteBackgroundcurrent">
+                        <div style="position: absolute; top: 0px; width: 100%; opacity: 1; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100%; background-image: url(&quot;https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_1920,h_1080,al_c,q_85/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp&quot;);" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage"  data-image-css="{&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundPosition&quot;:&quot;center center&quot;,&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;height&quot;:&quot;100%&quot;}">
                         </div>
                         <div-video
                             data-video-info="{&quot;fittingType&quot;:&quot;fill&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;staticVideoUrl&quot;:&quot;https://video.wixstatic.com/&quot;,&quot;videoId&quot;:&quot;video/11062b_4f14b356c1df4854968cf1cc94ca98c5&quot;,&quot;playerType&quot;:&quot;html5&quot;,&quot;isVideoDataExists&quot;:&quot;1&quot;,&quot;videoWidth&quot;:1920,&quot;videoHeight&quot;:1080,&quot;qualities&quot;:[{&quot;quality&quot;:&quot;480p&quot;,&quot;size&quot;:2073600},{&quot;quality&quot;:&quot;720p&quot;,&quot;size&quot;:2073600},{&quot;quality&quot;:&quot;1080p&quot;,&quot;size&quot;:2073600}],&quot;videoFormat&quot;:&quot;mp4&quot;,&quot;autoPlay&quot;:true,&quot;isViewerMode&quot;:true,&quot;containerId&quot;:&quot;SITE_BACKGROUND&quot;}"
-                            style="position:absolute;width:100%;height:100%;top:0"
+                            style="position:absolute;width:100%;height:100%;top:0" id="SITE_BACKGROUNDcurrentVideo"
                             class="siteBackgroundcurrentVideo bgVideo">
 
-                            <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous"
+                            <video role="presentation" preload="auto"
+                                playsinline="" crossorigin="anonymous"
                                 style="position: absolute; opacity: 1; width: 100%; height: 130%; left: 0px; top: -45px;"
                                 loop="" muted="" id="SITE_BACKGROUNDcurrentVideovideo" class="bgVideovideo" width="100%"
                                 height="100%" autoplay="true"
@@ -46,21 +44,23 @@
                                 data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;e6zct_desktop_posterImageRef&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg&quot;,&quot;description&quot;:&quot;public/8e256233-1752-4026-9341-54036e7f875e/d6b6b972-952c-4ab0-b46a-a6c05a0a94a5&quot;,&quot;width&quot;:1920,&quot;height&quot;:1080,&quot;alt&quot;:&quot;&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.33,&quot;amount&quot;:1,&quot;threshold&quot;:0}},&quot;devicePixelRatio&quot;:1,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;SITE_BACKGROUND&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}"
                                 data-is-svg="false" id="SITE_BACKGROUNDcurrentVideoposter" class="bgVideoposter"
                                 data-src="https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_1440,h_963,al_c,q_85,usm_0.33_1.00_0.00/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp">
-                                <img style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;"
+                                <img id="SITE_BACKGROUNDcurrentVideoposterimage"
+                                    style="width: 100%; height: 100%; object-position: 50% 50%; object-fit: cover;"
                                     alt="" data-type="image" itemprop="image"
                                     src="https://static.wixstatic.com/media/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.jpg/v1/fill/w_1440,h_963,al_c,q_85,usm_0.33_1.00_0.00/11062b_4f14b356c1df4854968cf1cc94ca98c5f000.webp"
                                     data-src="">
                             </div-image>
 
+                            
                         </div-video>
-                        <div style="position:absolute;top:0;width:100%;height:100%;background-image:url(https://static.wixstatic.com/media/0da768_361994b0f154464682a0aaf9724471cc.png)"
-                            class="siteBackgroundcurrentOverlay">
-                        </div>
+                        <div id="SITE_BACKGROUND_currentOverlay_e6zct_ihwenpcc1_bg"
+                            style="position:absolute;top:0;width:100%;height:100%;background-image:url(https://static.wixstatic.com/media/0da768_361994b0f154464682a0aaf9724471cc.png)"
+                            class="siteBackgroundcurrentOverlay"></div>
                     </div>
                 </div>
-                <!--fin video e imagen-->
-
-                <div class="SITE_ROOT" style="width:100%;min-width:980px;padding-bottom:0;top:50px" aria-hidden="false">
+                
+                <div id="SITE_ROOT" class="SITE_ROOT" style="width:100%;min-width:980px;padding-bottom:0;top:50px"
+                    aria-hidden="false">
 
                     <div id="masterPage" class="mesh-layout" data-mesh-layout="grid">
 
@@ -84,14 +84,10 @@
                                         <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
                                             <div data-packed="true" style="width: 517px; pointer-events: none;"
                                                 class="txtNew" id="comp-ig6adlrb">
-                                                <p class="font_9">
-                                                    <span style="letter-spacing:0.04em;">©
-                                                        2019&nbsp;Constructora del Arte
-                                                    </span>
-                                                </p>
+                                                <p class="font_9"><span style="letter-spacing:0.04em;">©
+                                                        2019&nbsp;Constructora del Arte</span></p>
                                             </div>
-
-                                            <div data-is-responsive="true"
+                                            <div data-is-responsive="false"
                                                 style="width:110px;height:30px;top:;bottom:;left:;right:;position:"
                                                 data-hide-prejs="true" class="lb1" id="comp-ighn7sv3">
                                                 <ul aria-label="Social bar" id="comp-ighn7sv3itemsContainer"
@@ -167,7 +163,7 @@
                         </footer>
 
 
-                        <!--header azul-->
+
                         <header data-is-mobile="false" data-state="fixedPosition transition-allowed"
                             data-site-width="980" data-header-top="0"
                             style="position:fixed;margin-top:0px;top:0;left:0;margin-left:0;width:100%;min-width:980px;bottom:;right:;z-index:50"
@@ -186,21 +182,17 @@
                                 </div>
                             </div>
                         </header>
-                        <!--fin header azul-->
 
-                        <!--espacio entre header y mensaje de bienvenida-->
+
                         <div id="SITE_HEADER-placeholder" style="height:100px;display:block"></div>
-                        <!--fin espacio entre header y mensaje de bienvenida-->
 
-
-                        <main tabindex="-1" data-is-mobile="false" data-is-mesh="true" data-site-width="980" style="left:0;margin-left:0;width:100%;min-width:980px;top:0;bottom:;right:;position:" class="pc1" data-state="" id="PAGES_CONTAINER">
-                            
-                            
-                            <div style="left:0" id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground">
-                            </div>
-
-
-                            <div style="position:relative" id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent">
+                        <main tabindex="-1" data-is-mobile="false" data-is-mesh="true" data-site-width="980"
+                            style="left:0;margin-left:0;width:100%;min-width:980px;top:0;bottom:;right:;position:"
+                            class="pc1" data-state="" id="PAGES_CONTAINER">
+                            <div style="left:0" id="PAGES_CONTAINERscreenWidthBackground"
+                                class="pc1screenWidthBackground"></div>
+                            <div style="position:relative" id="PAGES_CONTAINERcenteredContent"
+                                class="pc1centeredContent">
                                 <div style="display:none" id="PAGES_CONTAINERbg" class="pc1bg"></div>
                                 <div style="position:relative" id="PAGES_CONTAINERinlineContent"
                                     class="pc1inlineContent">
@@ -211,81 +203,55 @@
                                             <div style="margin-left:calc((100% - 980px) / 2);width:980px" id="e6zctbg"
                                                 class="style-k089oov6bg"></div>
                                             <div class="style-k089oov6inlineContent" id="e6zctinlineContent">
-
                                                 <div id="e6zctinlineContent-gridWrapper" data-mesh-internal="true">
-
-                                                    <div id="e6zctinlineContent-gridContainer" data-mesh-internal="true">
-
-                                                        <div data-packed="true" style="width: 769px; pointer-events: none;" class="txtNew" id="comp-ihpx2cmf">
-
+                                                    <div id="e6zctinlineContent-gridContainer"
+                                                        data-mesh-internal="true">
+                                                        <div data-packed="true"
+                                                            style="width: 769px; pointer-events: none;" class="txtNew"
+                                                            id="comp-ihpx2cmf">
                                                             <h3 class="font_3"
-                                                                style="line-height:1.1em; text-align:center;">
-                                                                <span class="color_17">
-                                                                    <span style="letter-spacing:0.05em;">
-                                                                        <span
+                                                                style="line-height:1.1em; text-align:center;"><span
+                                                                    class="color_17"><span
+                                                                        style="letter-spacing:0.05em;"><span
                                                                             style="background-color:#232323;">CONSTRUCTORA
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
+                                                                        </span></span></span></h3>
+
+                                                            <h3 class="font_3"
+                                                                style="line-height:1.1em; text-align:center;"><span
+                                                                    class="color_17"><span
+                                                                        style="letter-spacing:0.05em;"><span
+                                                                            style="background-color:#232323;">DEL
+                                                                            ARTE</span></span></span></h3>
+
+                                                            <h3 class="font_3"
+                                                                style="line-height:1.1em; text-align:center;"><span
+                                                                    class="color_17"><span
+                                                                        style="letter-spacing:0.05em;"><span
+                                                                            style="background-color:#232323;"><span
+                                                                                class="wixGuard">​</span></span></span></span>
                                                             </h3>
 
                                                             <h3 class="font_3"
-                                                                style="line-height:1.1em; text-align:center;">
-                                                                <span class="color_17">
-                                                                    <span style="letter-spacing:0.05em;">
-                                                                        <span style="background-color:#232323;">
-                                                                            DEL ARTE
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </h3>
+                                                                style="line-height:1.1em; text-align:center;"><span
+                                                                    class="color_17"><span
+                                                                        style="letter-spacing:0.05em;"><span
+                                                                            style="background-color:#232323;">SITIO
+                                                                            WEB</span></span></span></h3>
 
                                                             <h3 class="font_3"
-                                                                style="line-height:1.1em; text-align:center;">
-                                                                <span class="color_17">
-                                                                    <span style="letter-spacing:0.05em;">
-                                                                        <span style="background-color:#232323;">
-                                                                            <span class="wixGuard">​
-                                                                            </span>
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </h3>
-
-                                                            <h3 class="font_3"
-                                                                style="line-height:1.1em; text-align:center;">
-                                                                <span class="color_17">
-                                                                    <span style="letter-spacing:0.05em;">
-                                                                        <span style="background-color:#232323;">
-                                                                            SITIO WEB
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </h3>
-
-                                                            <h3 class="font_3"
-                                                                style="line-height:1.1em; text-align:center;">
-                                                                <span class="color_17">
-                                                                    <span style="letter-spacing:0.05em;">
-                                                                        <span style="background-color:#232323;">
-                                                                            EN CONSTRUCCIÓN
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </h3>
-
+                                                                style="line-height:1.1em; text-align:center;"><span
+                                                                    class="color_17"><span
+                                                                        style="letter-spacing:0.05em;"><span
+                                                                            style="background-color:#232323;">EN
+                                                                            CONSTRUCCIÓN</span></span></span></h3>
                                                         </div>
-
-
-                                                        <!--flecha abajo-->
                                                         <div style="width: 54px; height: 31px;" title=""
                                                             data-is-responsive="false" data-display-mode="fill"
                                                             data-content-padding-horizontal="0"
                                                             data-content-padding-vertical="0" data-exact-height="31"
-                                                            class="ca1" id="comp-ihpx2cm9">
-                                                            <a
+                                                            class="ca1" id="comp-ihpx2cm9"><a
                                                                 style="cursor: pointer; width: 54px; height: 31px;"
-                                                                href="#libk-abajo"
+                                                                href="https://cdarteconstructora.wixsite.com/cdarte"
                                                                 target="_self" data-keep-roots="true"
                                                                 data-anchor="dataItem-iggq277e" id="comp-ihpx2cm9link"
                                                                 class="ca1link">
@@ -300,19 +266,31 @@
                                                                         alt="" data-type="image" itemprop="image"
                                                                         src="https://static.wixstatic.com/media/c19c76_376dc1d20bd348b99c4a732a1d6d7c81.png/v1/fill/w_54,h_31,al_c,q_80,usm_0.66_1.00_0.01/c19c76_376dc1d20bd348b99c4a732a1d6d7c81.webp"
                                                                         data-src=""></wix-image>
-                                                            </a>
-                                                        </div>
-                                                        <!--fin flecha abajo-->
-
-                                                       
-                                                        <!--seccion servicios-->
-                                                        <section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-ig277xvm1">
-                                                            
-                                                            
-                                                            <div style="position:relative;width:calc(100% - 0px);min-width:980px"  id="comp-ig277xvm1inlineContent"  class="strc1inlineContent">
-
-                                                                <div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc22j4j1">
-
+                                                            </a></div>
+                                                        <section
+                                                            style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0"
+                                                            data-responsive="true" data-is-screen-width="true"
+                                                            data-col-margin="0" data-row-margin="0" class="strc1"
+                                                            id="comp-ig277xvm1">
+                                                            <div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; min-width: 980px; left: 0px; right: 0px; bottom: 0px;"
+                                                                data-page-id="e6zct" data-enable-video="true"
+                                                                data-bg-effect-name="" data-media-type=""
+                                                                data-use-clip-path="" data-needs-clipping=""
+                                                                data-wix-video-layout="true" class="strc1balata"
+                                                                id="comp-ig277xvm1balata">
+                                                                <div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent"
+                                                                    class="bgColor" id="comp-ig277xvm1balatabgcolor">
+                                                                    <div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1"
+                                                                        id="comp-ig277xvm1balatabgcoloroverlay"
+                                                                        class="bgColoroverlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="position:relative;width:calc(100% - 0px);min-width:980px"
+                                                                id="comp-ig277xvm1inlineContent"
+                                                                class="strc1inlineContent">
+                                                                <div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:"
+                                                                    data-content-width="980" data-is-mesh="true"
+                                                                    class="strc1" id="mediairc22j4j1">
                                                                     <div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; bottom: 0px;"
                                                                         data-page-id="e6zct" data-enable-video="true"
                                                                         data-bg-effect-name="" data-media-type=""
@@ -327,36 +305,41 @@
                                                                                 class="bgColoroverlay"></div>
                                                                         </div>
                                                                     </div>
-
-                                                                    <div class="strc1inlineContent"  style="width:100%;position:relative;top:0;bottom:0" id="mediairc22j4j1inlineContent">
-                                                                        
-                                                                        <div id="mediairc22j4j1inlineContent-gridWrapper"  data-mesh-internal="true">
-
-                                                                            <div id="mediairc22j4j1inlineContent-gridContainer" data-mesh-internal="true">
-
-                                                                               <!--titulo seccion-->
-                                                                                <div data-packed="true" style="width: 611px; pointer-events: none;" class="txtNew" id="comp-ig2akd9t">
-                                                                                    <h2 class="font_2" style="text-align:center;">
-                                                                                        <span class="color_13">
-                                                                                            <span style="letter-spacing:0.05em;">SERVICIOS</span>
-                                                                                        </span>
+                                                                    <div class="strc1inlineContent"
+                                                                        style="width:100%;position:relative;top:0;bottom:0"
+                                                                        id="mediairc22j4j1inlineContent">
+                                                                        <div id="mediairc22j4j1inlineContent-gridWrapper"
+                                                                            data-mesh-internal="true">
+                                                                            <div id="mediairc22j4j1inlineContent-gridContainer"
+                                                                                data-mesh-internal="true">
+                                                                                <div data-packed="true"
+                                                                                    style="width: 611px; pointer-events: none;"
+                                                                                    class="txtNew" id="comp-ig2akd9t">
+                                                                                    <h2 class="font_2"
+                                                                                        style="text-align:center;"><span
+                                                                                            class="color_13"><span
+                                                                                                style="letter-spacing:0.05em;">SERVICIOS</span></span>
                                                                                     </h2>
                                                                                 </div>
-                                                                                <!--fin titulo seccion-->
-
-                                                                                <!--franja naranja-->
-                                                                                <div data-border-width="10"style="transform-origin:center 5px;top:;bottom:;left:;right:;width:116px;height:10px;position:" class="style-k089oosb" id="comp-ig97ifbc"></div>
-                                                                                <!--fin franja naranja-->
-
-                                                                                <!--caja de servicios 1-->
-
-                                                                                <!--imagen de caja-->
-                                                                                <div style="width: 300px; height: 227px;" title="" data-is-responsive="false"  data-display-mode="fill" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="227" class="ca1" id="comp-ig27xhrf">
-
-                                                                                    <div style="width: 300px; height: 227px;" id="comp-ig27xhrflink" class="ca1link">
-                                                                                       
-                                                                                        <div-image
+                                                                                <div data-border-width="10"
+                                                                                    style="transform-origin:center 5px;top:;bottom:;left:;right:;width:116px;height:10px;position:"
+                                                                                    class="style-k089oosb"
+                                                                                    id="comp-ig97ifbc"></div>
+                                                                                <div style="width: 300px; height: 227px;"
+                                                                                    title="" data-is-responsive="false"
+                                                                                    data-display-mode="fill"
+                                                                                    data-content-padding-horizontal="0"
+                                                                                    data-content-padding-vertical="0"
+                                                                                    data-exact-height="227" class="ca1"
+                                                                                    id="comp-ig27xhrf">
+                                                                                    <div style="width: 300px; height: 227px;"
+                                                                                        id="comp-ig27xhrflink"
+                                                                                        class="ca1link">
+                                                                                        <wix-image
                                                                                             style="width:300px;height:227px;top:0;left:0"
+                                                                                            data-has-bg-scroll-effect=""
+                                                                                            data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ig27xhri&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;e6zct&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1213,&quot;height&quot;:922,&quot;alt&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ig27xhrf&quot;,&quot;displayMode&quot;:&quot;fill&quot;}"
+                                                                                            data-is-svg="false"
                                                                                             id="comp-ig27xhrfimg"
                                                                                             class="ca1img"
                                                                                             data-src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
@@ -365,13 +348,9 @@
                                                                                                 alt="" data-type="image"
                                                                                                 itemprop="image"
                                                                                                 src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp"
-                                                                                                data-src="">
-                                                                                        </div-image>
+                                                                                                data-src=""></wix-image>
                                                                                     </div>
                                                                                 </div>
-                                                                                <!--fin imagen de caja-->
-                                                                                
-                                                                                <!--caja de detalle-->
                                                                                 <div style="top:;bottom:;left:;right:;position:"
                                                                                     class="style-k089oot7"
                                                                                     id="comp-ig9krioy">
@@ -428,13 +407,6 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-
-                                                                                <!--fin caja de detalle-->
-
-                                                                                <!--fin caja de servicios 1 -->
-
-
-                                                                                 <!--caja de servicios 2-->
                                                                                 <div style="width: 300px; height: 227px;"
                                                                                     title="" data-is-responsive="false"
                                                                                     data-display-mode="fill"
@@ -461,8 +433,6 @@
                                                                                                 data-src=""></wix-image>
                                                                                     </div>
                                                                                 </div>
-
-
                                                                                 <div style="top:;bottom:;left:;right:;position:"
                                                                                     class="style-k089oot7"
                                                                                     id="comp-ig96d6f5">
@@ -518,9 +488,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                 <!--fin caja de servicios 2-->
-
-                                                                                <!--caja de servicios 3-->
+                                                                                
                                                                                 <div style="width: 300px; height: 227px;"
                                                                                     title="" data-is-responsive="false"
                                                                                     data-display-mode="fill"
@@ -547,7 +515,7 @@
                                                                                                 data-src=""></wix-image>
                                                                                     </div>
                                                                                 </div>
-
+                                                                                
                                                                                 <div style="top:;bottom:;left:;right:;position:"
                                                                                     class="style-k089oot7"
                                                                                     id="comp-ig96e99p">
@@ -604,322 +572,113 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                 <!--caja de servicios 3-->
                                                                             </div>
-
-                                                                            <!--lista dos de servicios-->
-                                                                            <div id="mediairc22j4j1inlineContent-gridContainer" data-mesh-internal="true">
-
-                                                                                 <!--caja de servicios 1-->
- 
-                                                                                 <!--imagen de caja-->
-                                                                                 <div style="width: 300px; height: 227px;" title="" data-is-responsive="false"  data-display-mode="fill" data-content-padding-horizontal="0" data-content-padding-vertical="0" data-exact-height="227" class="ca1" id="comp-ig27xhrf">
- 
-                                                                                     <div style="width: 300px; height: 227px;" id="comp-ig27xhrflink" class="ca1link">
-                                                                                        
-                                                                                         <div-image
-                                                                                             style="width:300px;height:227px;top:0;left:0"
-                                                                                             id="comp-ig27xhrfimg"
-                                                                                             class="ca1img"
-                                                                                             data-src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-                                                                                             <img id="comp-ig27xhrfimgimage"
-                                                                                                 style="object-position:50% 50%;width:300px;height:227px;object-fit:cover"
-                                                                                                 alt="" data-type="image"
-                                                                                                 itemprop="image"
-                                                                                                 src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp"
-                                                                                                 data-src="">
-                                                                                         </div-image>
-                                                                                     </div>
-                                                                                 </div>
-                                                                                 <!--fin imagen de caja-->
-                                                                                 
-                                                                                 <!--caja de detalle-->
-                                                                                 <div style="top:;bottom:;left:;right:;position:"
-                                                                                     class="style-k089oot7"
-                                                                                     id="comp-ig9krioy">
-                                                                                     <div id="comp-ig9krioybg"
-                                                                                         class="style-k089oot7bg"></div>
-                                                                                     <div class="style-k089oot7inlineContent"
-                                                                                         id="comp-ig9krioyinlineContent">
-                                                                                         <div id="comp-ig9krioyinlineContent-gridWrapper"
-                                                                                             data-mesh-internal="true">
-                                                                                             <div id="comp-ig9krioyinlineContent-gridContainer"
-                                                                                                 data-mesh-internal="true">
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 244px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig277xw1">
-                                                                                                     <h6 class="font_6"
-                                                                                                         style="line-height:1.1em;">
-                                                                                                         <span>Planeamiento</span>
-                                                                                                     </h6>
-                                                                                                 </div>
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 247px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig9krip2">
-                                                                                                     <p class="font_8"
-                                                                                                         style="line-height:1.6em;">
-                                                                                                         <span>Párrafo.
-                                                                                                             Haz clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             propio texto
-                                                                                                             y editar. Es
-                                                                                                             fácil. Haz
-                                                                                                             clic en
-                                                                                                             Editar Texto
-                                                                                                             o doble clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             contenido y
-                                                                                                             cambiar la
-                                                                                                             fuente. En
-                                                                                                             este espacio
-                                                                                                             puedes
-                                                                                                             contar tu
-                                                                                                             historia y
-                                                                                                             permitir a
-                                                                                                             tus usuarios
-                                                                                                             saber más
-                                                                                                             sobre
-                                                                                                             ti.</span>
-                                                                                                     </p>
-                                                                                                 </div>
-                                                                                             </div>
-                                                                                         </div>
-                                                                                     </div>
-                                                                                 </div>
- 
-                                                                                 <!--fin caja de detalle-->
- 
-                                                                                 <!--fin caja de servicios 1 -->
- 
- 
-                                                                                  <!--caja de servicios 2-->
-                                                                                 <div style="width: 300px; height: 227px;"
-                                                                                     title="" data-is-responsive="false"
-                                                                                     data-display-mode="fill"
-                                                                                     data-content-padding-horizontal="0"
-                                                                                     data-content-padding-vertical="0"
-                                                                                     data-exact-height="227" class="ca1"
-                                                                                     id="comp-ig27xhr7">
-                                                                                     <div style="width: 300px; height: 227px;"
-                                                                                         id="comp-ig27xhr7link"
-                                                                                         class="ca1link">
-                                                                                         <wix-image
-                                                                                             style="width:300px;height:227px;top:0;left:0"
-                                                                                             data-has-bg-scroll-effect=""
-                                                                                             data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ig27xhr8&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;e6zct&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1021,&quot;height&quot;:776,&quot;alt&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ig27xhr7&quot;,&quot;displayMode&quot;:&quot;fill&quot;}"
-                                                                                             data-is-svg="false"
-                                                                                             id="comp-ig27xhr7img"
-                                                                                             class="ca1img"
-                                                                                             data-src="https://static.wixstatic.com/media/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.webp">
-                                                                                             <img id="comp-ig27xhr7imgimage"
-                                                                                                 style="object-position:50% 50%;width:300px;height:227px;object-fit:cover"
-                                                                                                 alt="" data-type="image"
-                                                                                                 itemprop="image"
-                                                                                                 src="https://static.wixstatic.com/media/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_8c7f5eed08b047bdaaf2833985c4b3d7.webp"
-                                                                                                 data-src=""></wix-image>
-                                                                                     </div>
-                                                                                 </div>
- 
- 
-                                                                                 <div style="top:;bottom:;left:;right:;position:"
-                                                                                     class="style-k089oot7"
-                                                                                     id="comp-ig96d6f5">
-                                                                                     <div id="comp-ig96d6f5bg"
-                                                                                         class="style-k089oot7bg"></div>
-                                                                                     <div class="style-k089oot7inlineContent"
-                                                                                         id="comp-ig96d6f5inlineContent">
-                                                                                         <div id="comp-ig96d6f5inlineContent-gridWrapper"
-                                                                                             data-mesh-internal="true">
-                                                                                             <div id="comp-ig96d6f5inlineContent-gridContainer"
-                                                                                                 data-mesh-internal="true">
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 247px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig97mhlm">
-                                                                                                     <h6 class="font_6"
-                                                                                                         style="line-height:1.1em;">
-                                                                                                         Maquetas</h6>
-                                                                                                 </div>
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 247px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig97nh1r">
-                                                                                                     <p class="font_8"
-                                                                                                         style="line-height:1.6em;">
-                                                                                                         <span>Párrafo.
-                                                                                                             Haz clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             propio texto
-                                                                                                             y editar. Es
-                                                                                                             fácil. Haz
-                                                                                                             clic en
-                                                                                                             Editar Texto
-                                                                                                             o doble clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             contenido y
-                                                                                                             cambiar la
-                                                                                                             fuente. En
-                                                                                                             este espacio
-                                                                                                             puedes
-                                                                                                             contar tu
-                                                                                                             historia y
-                                                                                                             permitir a
-                                                                                                             tus usuarios
-                                                                                                             saber más
-                                                                                                             sobre
-                                                                                                             ti.</span>
-                                                                                                     </p>
-                                                                                                 </div>
-                                                                                             </div>
-                                                                                         </div>
-                                                                                     </div>
-                                                                                 </div>
-                                                                                  <!--fin caja de servicios 2-->
- 
-                                                                                 <!--caja de servicios 3-->
-                                                                                 <div style="width: 300px; height: 227px;"
-                                                                                     title="" data-is-responsive="false"
-                                                                                     data-display-mode="fill"
-                                                                                     data-content-padding-horizontal="0"
-                                                                                     data-content-padding-vertical="0"
-                                                                                     data-exact-height="227" class="ca1"
-                                                                                     id="comp-ig27xhrf1">
-                                                                                     <div style="width: 300px; height: 227px;"
-                                                                                         id="comp-ig27xhrf1link"
-                                                                                         class="ca1link">
-                                                                                         <wix-image
-                                                                                             style="width:300px;height:227px;top:0;left:0"
-                                                                                             data-has-bg-scroll-effect=""
-                                                                                             data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ig27xhrk&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;e6zct&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;uri&quot;:&quot;c19c76_e1a7148276024a03a7b0772c5a8fb9e7.jpg&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:496,&quot;height&quot;:347,&quot;alt&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;comp-ig27xhrf1&quot;,&quot;displayMode&quot;:&quot;fill&quot;}"
-                                                                                             data-is-svg="false"
-                                                                                             id="comp-ig27xhrf1img"
-                                                                                             class="ca1img"
-                                                                                             data-src="https://static.wixstatic.com/media/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.webp">
-                                                                                             <img id="comp-ig27xhrf1imgimage"
-                                                                                                 style="object-position:50% 50%;width:300px;height:227px;object-fit:cover"
-                                                                                                 alt="" data-type="image"
-                                                                                                 itemprop="image"
-                                                                                                 src="https://static.wixstatic.com/media/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.jpg/v1/fill/w_300,h_227,al_c,q_80,usm_0.66_1.00_0.01/c19c76_e1a7148276024a03a7b0772c5a8fb9e7.webp"
-                                                                                                 data-src=""></wix-image>
-                                                                                     </div>
-                                                                                 </div>
- 
-                                                                                 <div style="top:;bottom:;left:;right:;position:"
-                                                                                     class="style-k089oot7"
-                                                                                     id="comp-ig96e99p">
-                                                                                     <div id="comp-ig96e99pbg"
-                                                                                         class="style-k089oot7bg"></div>
-                                                                                     <div class="style-k089oot7inlineContent"
-                                                                                         id="comp-ig96e99pinlineContent">
-                                                                                         <div id="comp-ig96e99pinlineContent-gridWrapper"
-                                                                                             data-mesh-internal="true">
-                                                                                             <div id="comp-ig96e99pinlineContent-gridContainer"
-                                                                                                 data-mesh-internal="true">
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 247px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig97m2j4">
-                                                                                                     <h6 class="font_6"
-                                                                                                         style="line-height:1.1em;">
-                                                                                                         <span>Construcción</span>
-                                                                                                     </h6>
-                                                                                                 </div>
-                                                                                                 <div data-packed="true"
-                                                                                                     style="width: 247px; pointer-events: none;"
-                                                                                                     class="txtNew"
-                                                                                                     id="comp-ig97o77u">
-                                                                                                     <p class="font_8"
-                                                                                                         style="line-height:1.6em;">
-                                                                                                         <span>Párrafo.
-                                                                                                             Haz clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             propio texto
-                                                                                                             y editar. Es
-                                                                                                             fácil. Haz
-                                                                                                             clic en
-                                                                                                             Editar Texto
-                                                                                                             o doble clic
-                                                                                                             aquí para
-                                                                                                             agregar tu
-                                                                                                             contenido y
-                                                                                                             cambiar la
-                                                                                                             fuente. En
-                                                                                                             este espacio
-                                                                                                             puedes
-                                                                                                             contar tu
-                                                                                                             historia y
-                                                                                                             permitir a
-                                                                                                             tus usuarios
-                                                                                                             saber más
-                                                                                                             sobre
-                                                                                                             ti.</span>
-                                                                                                     </p>
-                                                                                                 </div>
-                                                                                             </div>
-                                                                                         </div>
-                                                                                     </div>
-                                                                                 </div>
-                                                                                  <!--caja de servicios 3-->
-                                                                             </div>
-
-                                                                             <!--fin lista dos de servicios-->
-                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </section>
-                                                        <!--fin seccion servicios-->
-
-
-
-
                                                         <div tabindex="-1" role="region" aria-label="SERVICIOS"
                                                             style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:21px;position:"
-                                                            class="AutoWidthAnchorSkin" id="comp-iggq277c">&nbsp;
-                                                        </div>
+                                                            class="AutoWidthAnchorSkin" id="comp-iggq277c">&nbsp;</div>
+                                                        <section
+                                                            style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0"
+                                                            data-responsive="true" data-is-screen-width="true"
+                                                            data-col-margin="0" data-row-margin="0" class="strc1"
+                                                            id="comp-igahromo">
+                                                            <div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; min-width: 980px; left: 0px; right: 0px; bottom: 0px;"
+                                                                data-page-id="e6zct" data-enable-video="true"
+                                                                data-bg-effect-name="" data-media-type=""
+                                                                data-use-clip-path="" data-needs-clipping=""
+                                                                data-wix-video-layout="true" class="strc1balata"
+                                                                id="comp-igahromobalata">
+                                                                <div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent"
+                                                                    class="bgColor" id="comp-igahromobalatabgcolor">
+                                                                    <div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1"
+                                                                        id="comp-igahromobalatabgcoloroverlay"
+                                                                        class="bgColoroverlay"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="position:relative;width:calc(100% - 0px);min-width:980px"
+                                                                id="comp-igahromoinlineContent"
+                                                                class="strc1inlineContent">
+                                                                <div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:"
+                                                                    data-content-width="980" data-is-mesh="true"
+                                                                    class="strc1" id="mediairc22j4k11">
+                                                                    <div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; left: 0px; right: 0px; bottom: 0px; clip: rect(0px, 1440px, 683px, 0px);"
+                                                                        data-page-id="e6zct" data-enable-video="true"
+                                                                        data-bg-effect-name="BackgroundParallax"
+                                                                        data-media-type="Image" data-use-clip-path=""
+                                                                        data-needs-clipping="true"
+                                                                        data-wix-video-layout="true" class="strc1balata"
+                                                                        id="mediairc22j4k11balata">
+                                                                        <div style="position:fixed;width:100%;height:100%;top:0;background-color:rgba(192, 210, 229, 1)"
+                                                                            class="bgColor"
+                                                                            id="mediairc22j4k11balatabgcolor">
+                                                                            <div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1"
+                                                                                id="mediairc22j4k11balatabgcoloroverlay"
+                                                                                class="bgColoroverlay"></div>
+                                                                        </div>
+                                                                        <wix-bg-media
+                                                                            style="position: fixed; pointer-events: none; width: 1440px; height: 963px; top: 0px; left: 0px; transform-style: preserve-3d;"
+                                                                            data-has-bg-effect="1" data-fitting="fill"
+                                                                            data-align="center"
+                                                                            data-container-id="mediairc22j4k11"
+                                                                            data-page-id="e6zct"
+                                                                            data-media-comp-type="image"
+                                                                            id="mediairc22j4k11balatamedia"
+                                                                            class="bgMedia">
+                                                                            <wix-image
+                                                                                style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 33.2px, 0px);"
+                                                                                data-has-bg-scroll-effect="true"
+                                                                                data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ih62owvb&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;e6zct&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;shutterstock_159623462.jpg&quot;,&quot;uri&quot;:&quot;c19c76_427a7bbf62474f74968cb087499c7a3e.jpg&quot;,&quot;description&quot;:&quot;private/allMedia_picture&quot;,&quot;width&quot;:2250,&quot;height&quot;:1282,&quot;alt&quot;:&quot;&quot;,&quot;artist&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;},&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;mediairc22j4k11&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}"
+                                                                                data-is-svg="false" data-type="image"
+                                                                                id="mediairc22j4k11balatamediaimage"
+                                                                                class="bgImage"
+                                                                                data-src="https://static.wixstatic.com/media/c19c76_427a7bbf62474f74968cb087499c7a3e.jpg/v1/fill/w_1440,h_963,al_c,q_85,usm_0.66_1.00_0.01/c19c76_427a7bbf62474f74968cb087499c7a3e.webp">
+                                                                                <img id="mediairc22j4k11balatamediaimageimage"
+                                                                                    style="width: 1440px; height: 963px; object-position: 50% 50%; object-fit: cover;"
+                                                                                    alt="" data-type="image"
+                                                                                    itemprop="image"
+                                                                                    src="https://static.wixstatic.com/media/c19c76_427a7bbf62474f74968cb087499c7a3e.jpg/v1/fill/w_1440,h_963,al_c,q_85,usm_0.66_1.00_0.01/c19c76_427a7bbf62474f74968cb087499c7a3e.webp"
+                                                                                    data-src=""></wix-image>
+                                                                        </wix-bg-media>
+                                                                    </div>
+                                                                    <div class="strc1inlineContent"
+                                                                        style="width:100%;position:relative;top:0;bottom:0"
+                                                                        id="mediairc22j4k11inlineContent">
+                                                                        <style id="mediairc22j4k11-mesh-styles">
+                                                                            #mediairc22j4k11inlineContent {
+                                                                                height: 683px;
+                                                                                width: 100%;
+                                                                                min-height: ;
+                                                                                position: relative;
+                                                                            }
 
+                                                                            #mediairc22j4k11centeredContent {
+                                                                                position: relative;
+                                                                            }
 
-                                                        
+                                                                            #mediairc22j4k11inlineContent-gridWrapper {
+                                                                                pointer-events: none;
+                                                                            }
 
-                                                       <section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1" id="comp-igahromo"><div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; min-width: 980px; left: 0px; right: 0px; bottom: 0px;" data-page-id="e6zct" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-igahromobalata"><div style="position:absolute;width:100%;height:100%;top:0;background-color:transparent" class="bgColor" id="comp-igahromobalatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="comp-igahromobalatabgcoloroverlay" class="bgColoroverlay"></div></div></div><div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-igahromoinlineContent" class="strc1inlineContent"><div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1" id="mediairc22j4k11"><div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; left: 0px; right: 0px; bottom: 0px; clip: rect(0px, 1903px, 683px, 0px);" data-page-id="e6zct" data-enable-video="true" data-bg-effect-name="BackgroundParallax" data-media-type="Image" data-use-clip-path="" data-needs-clipping="true" data-wix-video-layout="true" class="strc1balata" id="mediairc22j4k11balata"><div style="position:fixed;width:100%;height:100%;top:0;background-color:rgba(192, 210, 229, 1)" class="bgColor" id="mediairc22j4k11balatabgcolor"><div style="width:100%;height:100%;position:absolute;top:0;background-image:;opacity:1" id="mediairc22j4k11balatabgcoloroverlay" class="bgColoroverlay"></div></div><wix-bg-media style="position: fixed; pointer-events: none; width: 1903px; height: 683px; top: 0px; left: 0px; transform-style: preserve-3d;" data-has-bg-effect="1" data-fitting="fill" data-align="center" data-container-id="mediairc22j4k11" data-page-id="e6zct" data-media-comp-type="image" id="mediairc22j4k11balatamedia" class="bgMedia"><wix-image style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; transform: translate3d(0px, 27px, 0px);" data-has-bg-scroll-effect="true" data-image-info="{&quot;imageData&quot;:{&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ih62owvb&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;e6zct&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;shutterstock_159623462.jpg&quot;,&quot;uri&quot;:&quot;c19c76_427a7bbf62474f74968cb087499c7a3e.jpg&quot;,&quot;description&quot;:&quot;private/allMedia_picture&quot;,&quot;width&quot;:2250,&quot;height&quot;:1282,&quot;alt&quot;:&quot;&quot;,&quot;artist&quot;:{&quot;id&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;},&quot;displayMode&quot;:&quot;fill&quot;},&quot;containerId&quot;:&quot;mediairc22j4k11&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;}" data-is-svg="false" data-type="image" id="mediairc22j4k11balatamediaimage" class="bgImage" data-src="https://static.wixstatic.com/media/c19c76_427a7bbf62474f74968cb087499c7a3e.jpg/v1/fill/w_1903,h_683,al_c,q_85,usm_0.66_1.00_0.01/c19c76_427a7bbf62474f74968cb087499c7a3e.webp"><img id="mediairc22j4k11balatamediaimageimage" style="width: 1903px; height: 683px; object-position: 50% 50%; object-fit: cover;" alt="" data-type="image" itemprop="image" src="https://static.wixstatic.com/media/c19c76_427a7bbf62474f74968cb087499c7a3e.jpg/v1/fill/w_1903,h_683,al_c,q_85,usm_0.66_1.00_0.01/c19c76_427a7bbf62474f74968cb087499c7a3e.webp" data-src=""></wix-image></wix-bg-media></div><div class="strc1inlineContent" style="width:100%;position:relative;top:0;bottom:0" id="mediairc22j4k11inlineContent"><style id="mediairc22j4k11-mesh-styles">
-    
-#mediairc22j4k11inlineContent {
-    height: 683px;
-    width: 100%;
-    min-height: ;
-    position: relative;
-}
+                                                                            #mediairc22j4k11inlineContent-gridContainer>* {
+                                                                                pointer-events: auto;
+                                                                            }
 
-#mediairc22j4k11centeredContent {
-    position: relative;
-}
+                                                                            #mediairc22j4k11inlineContent-gridContainer>[id$="-rotated-wrapper"] {
+                                                                                pointer-events: none;
+                                                                            }
 
-#mediairc22j4k11inlineContent-gridWrapper {
-    pointer-events: none;
-}
-
-#mediairc22j4k11inlineContent-gridContainer > * {
-    pointer-events: auto;
-}
-
-#mediairc22j4k11inlineContent-gridContainer > [id$="-rotated-wrapper"] {
-    pointer-events: none;
-}
-
-#mediairc22j4k11inlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
-    pointer-events: auto;
-}</style></div></div></div></section>
-
-
-                                                        
+                                                                            #mediairc22j4k11inlineContent-gridContainer>[id$="-rotated-wrapper"]>* {
+                                                                                pointer-events: auto;
+                                                                            }
+                                                                        </style>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
                                                         <div style="top:;bottom:;left:;right:;position:"
                                                             class="style-k089oot7" id="comp-igahubrl">
                                                             <div id="comp-igahubrlbg" class="style-k089oot7bg"></div>
@@ -945,14 +704,9 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
                                                         <div tabindex="-1" role="region" aria-label="NOSOTROS"
                                                             style="left:0;margin-left:0;width:100%;min-width:initial;top:;bottom:;right:;height:21px;position:"
-                                                            class="AutoWidthAnchorSkin" id="comp-iggq2kqb">&nbsp;
-                                                        </div>
-
-
+                                                            class="AutoWidthAnchorSkin" id="comp-iggq2kqb">&nbsp;</div>
                                                         <section
                                                             style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0"
                                                             data-responsive="true" data-is-screen-width="true"
@@ -3047,7 +2801,7 @@
                         </span>
                     </a>
 
-                    -->
+                    --> 
                 </div>
                 <div id="aspectCompsContainer" class="siteAspectsContainer">
                     <div style="position:absolute" id="popoverLayer">
@@ -3068,7 +2822,12 @@
 
                     }
                 </script>
+
+                <!--segundo div-->
             </div>
+
+
+            <!--primer div-->
         </div>
 
 
